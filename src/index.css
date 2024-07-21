@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Slick slider default styles */
+
+
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust the position of the dots */
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust the size of the dots */
+  color: #3490dc; /* Change the color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffed4a; /* Change the color of the active dot */
+}
+
