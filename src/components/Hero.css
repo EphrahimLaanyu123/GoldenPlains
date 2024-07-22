@@ -43,3 +43,12 @@
     transform: translateY(0.0625rem); /* Tailwind translate-y-0.5 */
   }
   
+
+  .slide-transition {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .join-us {
+    font-family: 'YourPreferredFont', sans-serif; /* Make sure to include your font here */
+  }
+  

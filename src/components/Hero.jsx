@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "tailwindcss/tailwind.css";
 import Hero1 from "../assets/structure.png";
@@ -41,6 +41,14 @@ const slides = [
 const HeroSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 6000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
@@ -58,7 +66,7 @@ const HeroSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity slide-transition ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{
@@ -115,7 +123,7 @@ const HeroSlider = () => {
 
       <Link
         to="/contact"
-        className="join-us"
+        className="join-us absolute bottom-52 left-32 bg-yellow-500 py-2 px-4 font-bold text-sky-900 text-lg lg:w-56 md:text-2xl lg:text-4xl sm:w-32"
       >
         JOIN US
       </Link>
