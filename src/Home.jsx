@@ -15,8 +15,8 @@ import AdminLogIn from './login/AdminLogIn'
 
 function Home() {
   return (
-    <div>
-      <Nav/>
+    <div className="bg-orange-100 min-h-screen">
+
       <HeroSlider/>
       <Space/>
       <InfoSection/>

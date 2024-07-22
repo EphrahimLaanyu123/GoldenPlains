@@ -1,0 +1,48 @@
+/* Courriculum.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.courriculum-title {
+    font-size: 4rem; /* Larger font size */
+    font-weight: bold;
+    text-align: center;
+    color: #2d3748; /* Gray-800 */
+    margin-bottom: 2rem; /* More spacing */
+    font-family: "Playfair Display", serif;
+    background-color: #fbbf24; /* Yellow-500 */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.courriculum-description {
+    font-size: 1.5rem; /* Larger font size */
+    text-align: center;
+    color: #4a5568; /* Gray-600 */
+    margin-bottom: 3rem; /* More spacing */
+    max-width: 60rem; /* Wider max-width */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Playfair Display", serif;
+}
+
+.courriculum-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%; /* Reduced width */
+    max-width: 300px; /* Max width */
+    height: 550px;
+    margin: auto; /* Center the cards */
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.courriculum-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 0.5rem;
+}

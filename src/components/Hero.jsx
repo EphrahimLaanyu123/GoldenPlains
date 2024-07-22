@@ -5,6 +5,8 @@ import Hero1 from "../assets/structure.png";
 import Hero2 from "../assets/heroImage3.png";
 import Hero5 from "../assets/HeroImage5.png";
 import { Link } from "react-router-dom";
+import Navbar from "./Nav"; // Import Navbar component
+import './Hero.css'; // Import CSS file
 
 const slides = [
   {
@@ -18,23 +20,22 @@ const slides = [
   },
   {
     image: Hero2,
-    title: "FUTURE",
-    subtitle: "NURTURING THE",
-    description: "Empowering Learners,  ",
-    description2: "Nurturing Tomorrow's Society",
+    title: "Inspiring Minds",
+    subtitle: "Cultivating Excellence",
+    description: "Fostering a nurturing environment where students excel.",
+    description2: "Experience a blend of tradition and innovation in education.",
     description3: "",
-    buttonText: "Learn More",
+    buttonText: "Explore Our Vision",
   },
   {
     image: Hero5,
-    title: "FUTURE",
-    subtitle: "NURTURING THE",
-    description: "Empowering Learners,  ",
-    description2: "Nurturing Tomorrow's Society",
+    title: "Innovative Learning",
+    subtitle: "Shaping Tomorrow's Leaders",
+    description: "Providing tools and resources for the leaders of tomorrow.",
+    description2: "Embrace a future full of possibilities with us.",
     description3: "",
     buttonText: "Learn More",
   },
-  // Add more slides as needed
 ];
 
 const HeroSlider = () => {
@@ -51,7 +52,9 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
+      <Navbar />
+
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -83,20 +86,22 @@ const HeroSlider = () => {
           </div>
         </div>
       ))}
+
       <div className="absolute inset-y-0 flex items-center justify-between w-full px-4">
         <button
           onClick={prevSlide}
-          className="bg-opacity-50 bg-gray-800 text-white p-2 md:p-4 rounded-full border-2 md:border-4 border-yellow-500 hover:bg-opacity-75"
+          className="bg-gray-800 text-white p-2 md:p-4 rounded-full hover:bg-opacity-75"
         >
           <FaChevronLeft className="text-sm md:text-lg lg:text-xl" />
         </button>
         <button
           onClick={nextSlide}
-          className="bg-opacity-50 bg-gray-800 text-white p-2 md:p-4 rounded-full border-2 md:border-4 border-yellow-500 hover:bg-opacity-75"
+          className="bg-gray-800 text-white p-2 md:p-4 rounded-full hover:bg-opacity-75"
         >
           <FaChevronRight className="text-sm md:text-lg lg:text-xl" />
         </button>
       </div>
+      
       <div className="absolute bottom-4 inset-x-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <div
@@ -107,9 +112,10 @@ const HeroSlider = () => {
           />
         ))}
       </div>
+
       <Link
         to="/contact"
-        className="absolute bottom-52 left-32 bg-yellow-500 py-2 px-4 font-bold text-sky-900 text-lg lg:w-56 md:text-2xl lg:text-4xl sm:w-32"
+        className="join-us"
       >
         JOIN US
       </Link>

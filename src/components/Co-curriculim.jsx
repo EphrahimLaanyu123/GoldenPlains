@@ -8,24 +8,23 @@ import { Link } from "react-router-dom";
 import Home from '../../src/assets/home.png'
 import Music from "../../src/assets/piano.png"
 import Computer from "../../src/assets/computer.png"
+import './Courriculum.css'; // Import the CSS file
 
 function Courriculum() {
   const infoSection = [
     {
       title: "MUSIC AND DRAMA",
-      image:Music,
-     
+      image: Music,
     },
     {
       title: "HOME SCIENCE",
-      image:Home,
+      image: Home,
     },
     {
       title: "DIGITAL LITERACY",
-      image:Computer,
+      image: Computer,
     },
   ];
-
 
   const settings = {
     dots: true,
@@ -80,11 +79,11 @@ function Courriculum() {
   }
 
   return (
-    <div className="flex flex-col items-center py-2 bg-orange-100 text-blue-900">
-      <div className="font-bold text-4xl text-blue-900 bg-yellow-500 py-2 px-4">
+    <div className="flex flex-col items-center py-12 bg-orange-100 text-blue-900">
+      <div className="courriculum-title">
         OUR CO-CURRICULUM
       </div>
-      <div className="flex justify-center flex-wrap pt-3 text-blue-900 font-bold text-2xl pl-20 pr-20">
+      <div className="courriculum-description">
         AT OUR SCHOOL, WE BELIEVE IN LEARNING THAT EXTENDS BEYOND THE CORE
         SUBJECTS OF THE COMPETENCY BASED CURRICULUM (CBC). THAT’S WHY WE OFFER A
         VIBRANT SELECTION OF CLUBS DESIGNED TO SPARK YOUR INTERESTS, TALENTS AND
@@ -99,16 +98,13 @@ function Courriculum() {
               style={{ height: "auto", maxWidth: "100%" }}
             >
               <div
-                className={`${
-                  index % 2 === 0 ? "bg-white" : "bg-yellow-500"
-                } p-2 shadow-2xl h-full`}
+                className={`courriculum-card ${index % 2 === 0 ? "bg-white" : "bg-yellow-500"}`}
               >
-                <img src={info.image} alt="Sports" className="w-full" />
+                <img src={info.image} alt="Sports" className="card-image" />
                 <div className="font-bold mb-2 pt-4 text-4xl">
                   {info.title}
                   <hr className="border-t-2 w-3/4 border-gray-400 mt-2" />
                 </div>
-              
                 <div className="pt-5 pb-5">
                   <div
                     className={`${

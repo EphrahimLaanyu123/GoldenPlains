@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import Sports from "../assets/sport.png";
 import { Link } from "react-router-dom";
-import Stem  from "../assets/stem.png";
-import Social from "../assets/social.png"
+import Stem from "../assets/stem.png";
+import Social from "../assets/social.png";
+import './Curriculum.css'; // Import the CSS file
 
 function Curriculum() {
     const [set, setShow] = useState();
@@ -34,37 +35,36 @@ function Curriculum() {
 
     
     const infoSection = [
-        { title: "ARTS AND SPORTS", subSection: set, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",image:Sports },
-        { title: "SOCIAL SCIENCES", subSection: drama, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",image:Social },
-        { title: "STEM", subSection: sci, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image:Stem }
+        { title: "ARTS AND SPORTS", subSection: set, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Sports },
+        { title: "SOCIAL SCIENCES", subSection: drama, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Social },
+        { title: "STEM", subSection: sci, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Stem }
     ];
-
+    
     return (
-        <div className="flex flex-col items-center py-2 bg-orange-100">
-            <div className="font-bold text-3xl md:text-4xl text-blue-900 bg-yellow-500 py-2 px-4 text-center">
+        <div className="px-6 py-12">
+            <div className="curriculum-title">
                 OUR CURRICULUM
             </div>
-            <div className="flex justify-center flex-wrap pt-3 text-blue-900 font-bold text-xl md:text-2xl px-4 md:px-20 text-center">
-                OUR CBC JUNIOR SCHOOL SECTION IS GUIDED BY THE MINISTRY OF EDUCATION
-                GUIDELINES. GOLDEN PLAINS WILL PROVIDE THE STUDENTS WITH THE
-                OPPORTUNITY TO FOLLOW ANY OF THE AVAILABLE PATHWAYS SINCE WE HAVE SET UP
-                INFRASTRUCTURE THAT CAN SUPPORT ALL THREE
+            <div className="curriculum-description">
+                OUR CBC JUNIOR SCHOOL SECTION IS GUIDED BY THE MINISTRY OF EDUCATION GUIDELINES. GOLDEN PLAINS WILL PROVIDE THE STUDENTS WITH THE OPPORTUNITY TO FOLLOW ANY OF THE AVAILABLE PATHWAYS SINCE WE HAVE SET UP INFRASTRUCTURE THAT CAN SUPPORT ALL THREE
             </div>
-            <div className="flex flex-wrap gap-10 pb-10 justify-center text-blue-900 pt-10 bg-orange-100 shadow-lg">
+            <div className="grid gap-10 lg:grid-cols-3">
                 {infoSection.map((info, index) => (
-                    <div key={index} className={`${index === 1 ? 'bg-white' : 'bg-yellow-500'} p-4 w-full md:w-1/3 lg:w-1/5 shadow-2xl`}>
-                        <img src={info.image} alt="Sports" className="w-full"/>
-                        <div className="font-bold mb-2 pt-4 text-2xl md:text-3xl lg:text-4xl">
-                            {info.title}
-                            <hr className="border-t-2 w-3/4 border-gray-400 mt-2" />
-                        </div>
-                        <div className="text-sm md:text-base text-gray-700 font-bold" dangerouslySetInnerHTML={{ __html: info.subSection }}></div>
-                        <div className='pt-5 pb-5'>
-                            <div className={`${index === 1 ? 'bg-yellow-500' : 'bg-white'} flex w-48 p-2 shadow-lg font-semibold`}>
-                                <Link to="/about"><div>Read More</div></Link>
-                                <div className='pt-1 flex'>
-                                    <FaChevronRight />
-                                    <FaChevronRight />
+                    <div key={index} className={`curriculum-card ${index === 1 ? 'bg-white' : 'bg-yellow-400'} shadow-md rounded-lg overflow-hidden`}>
+                        <img src={info.image} alt={info.title} className="card-image"/>
+                        <div className="p-4"> {/* Reduced padding */}
+                            <div className="text-xl font-semibold text-gray-800 mb-2">
+                                {info.title}
+                                <hr className="border-t-2 border-gray-200 mt-2 mb-4" />
+                            </div>
+                            <div className="text-gray-600" dangerouslySetInnerHTML={{ __html: info.subSection }}></div>
+                            <div className="pt-4 pb-4"> {/* Reduced padding */}
+                                <div className={`${index === 1 ? 'bg-yellow-500' : 'bg-gray-800'} flex w-40 p-2 shadow-lg font-semibold text-white rounded-full mx-auto`}> {/* Reduced width */}
+                                    <Link to="/about" className="flex-1 text-center">Read More</Link>
+                                    <div className="pt-1 flex">
+                                        <FaChevronRight />
+                                        <FaChevronRight />
+                                    </div>
                                 </div>
                             </div>
                         </div>
