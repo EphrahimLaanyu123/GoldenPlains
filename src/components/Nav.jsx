@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 const ContactButton = () => {
   const handleContactClick = () => {
@@ -11,7 +12,7 @@ const ContactButton = () => {
   return (
     <button
       onClick={handleContactClick}
-      className="bg-yellow-500 p-2 rounded-full w-48 font-bold text-sky-900"
+      className="contact-button"
     >
       CONTACT US
     </button>
@@ -26,30 +27,30 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent font-bold p-2 fixed w-full top-0 left-0 z-50 shadow-md">
-      <div className="container mx-auto flex flex-row justify-between items-center text-white px-4 md:px-8">
-        <div className="flex items-center">
+    <nav className="navbar">
+      <div className="container">
+        <div className="logo-and-title">
           <Link to="/">
-            <img src={Logo} width={70} alt="Logo" className="mr-4" />
+            <img src={Logo} width={70} alt="Logo" className="logo" />
           </Link>
-          <div className="font-bold text-l leading-tight">
+          <div className="school-title">
             <div>GOLDEN</div>
             <div>PLAINS</div>
             <div>SCHOOL</div>
           </div>
         </div>
-        <div className="hidden md:flex space-x-4">
-          <Link to="/" className="hover:text-yellow-500">HOME</Link>
-          <Link to="/about" className="hover:text-yellow-500">ABOUT US</Link>
-          <Link to="/admissions" className="hover:text-yellow-500">ADMISSIONS</Link>
-          <Link to="/gallery" className="hover:text-yellow-500">GALLERY</Link>
-          <Link to="/careers" className="hover:text-yellow-500">CAREERS</Link>
+        <div className="menu-items hidden-on-mobile">
+          <Link to="/" className="menu-link">HOME</Link>
+          <Link to="/about" className="menu-link">ABOUT US</Link>
+          <Link to="/admissions" className="menu-link">ADMISSIONS</Link>
+          <Link to="/gallery" className="menu-link">GALLERY</Link>
+          <Link to="/careers" className="menu-link">CAREERS</Link>
         </div>
-        <div className="hidden md:block">
+        <div className="contact-button-container hidden-on-mobile">
           <ContactButton />
         </div>
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white">
+        <div className="menu-toggle">
+          <button onClick={toggleMenu} className="menu-icon">
             {menuOpen ? (
               <AiOutlineClose size={24} />
             ) : (
@@ -59,18 +60,18 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden bg-sky-900 text-white">
-          <div className="flex flex-col space-y-4 px-4 py-4">
-            <Link to="/" className="hover:text-yellow-500">HOME</Link>
-            <Link to="/about" className="hover:text-yellow-500">ABOUT US</Link>
+        <div className="mobile-menu">
+          <div className="mobile-menu-items">
+            <Link to="/" className="menu-link">HOME</Link>
+            <Link to="/about" className="menu-link">ABOUT US</Link>
             <a
               href="https://goldenplainspjs.com/wp-content/uploads/2024/05/JUNIOR-SCHL-ADM-TEMPLATE.docx"
               download
-              className="hover:text-yellow-500"
+              className="menu-link"
             >
               ADMISSIONS
             </a>
-            <Link to="/gallery" className="hover:text-yellow-500">GALLERY</Link>
+            <Link to="/gallery" className="menu-link">GALLERY</Link>
             <div>
               <ContactButton />
             </div>

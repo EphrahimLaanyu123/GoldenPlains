@@ -19,6 +19,7 @@ import Admissions from "./Admissions";
 import AdminLogIn from "./login/AdminLogIn";
 import LoginPage from "./login/LoginPage";
 import RegisterPage from "./login/RegisterPage";
+import ArtsAndSports from "./components/ArtsandSports";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -45,6 +46,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/admin" element={<AdminLogIn/>}/>
         <Route exact path="/login" element={<LoginPage/>}/>
         <Route exact path="/register" element={<RegisterPage/>}/>
+        <Route exact path="/arts-and-sports" element={<ArtsAndSports/>}/>
         {/* <Route exact path="/curriculum/:id" element={<Det/>}/> */}
       </Routes>
     </BrowserRouter>
