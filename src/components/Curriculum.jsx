@@ -57,29 +57,21 @@ function Curriculum() {
         <div className="curriculum-container">
             <div className="title-description-container">
                 <div className="curriculum-title">
-                    OUR CURRICULUM
+                    Our curriculum
                 </div>
-                <div className="curriculum-description">
-                    OUR CBC JUNIOR SCHOOL SECTION IS <br /> GUIDED BY THE MINISTRY OF EDUCATION GUIDELINES.<br /> GOLDEN PLAINS WILL PROVIDE THE STUDENTS WITH THE OPPORTUNITY TO FOLLOW ANY OF THE AVAILABLE PATHWAYS SINCE <br /> WE HAVE SET UP INFRASTRUCTURE THAT CAN SUPPORT ALL THREE
-                </div>
-            </div>
-            <div className="cards-container">
-                {infoSection.map((info, index) => (
-                    <div key={index} className="curriculum-card">
-                        <img src={info.image} alt={info.title} className="card-image" />
-                        <div className="card-content">
-                            <div className="card-title">
-                                {info.title}
-                            </div>
-                            <div className="card-description" dangerouslySetInnerHTML={{ __html: info.subSection }}></div>
-                            <Link to={generateLink(info.title)} className="read-more-btn">
-                                Read More
-                                <FaChevronRight className="read-more-icon" />
-                                <FaChevronRight className="read-more-icon" />
-                            </Link>
+                <div className="curriculum-div">
+                    <div className="description-underline-wrapper">
+                        <div className="curriculum-description">
+                            Our CBC junior school section is <br /> guided by the ministry of education  <br />guidelines.<br /> Golden Plains will provide  the <br />students with the  opportunity to<br /> follow any  of the available pathways <br />since  we have set up infrastructure <br />that can support all three.
                         </div>
+                        <div className="underline"></div>
                     </div>
-                ))}
+                    <div className="images-div">
+                        <img src={Sports} alt="Sports" />
+                        <img src={Social} alt="Social Sciences" />
+                        <img src={Stem} alt="STEM" />
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -1,125 +1,58 @@
-import React, { useState, useEffect } from "react";
-import { FaChevronRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React from "react";
+import "./InfoSection.css";
+import kids from "../assets/DSC_5976.jpg";
+import kidss from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5980.jpg"
 
 function InfoSection() {
-  const [who, setWho] = useState("");
-  const [what, setWhat] = useState("");
-  const [whotitle, setWhoTitle] = useState("");
-  const [whattitle, setWhatTitle] = useState("");
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response1 = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/7"
-        );
-        const response2 = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/9"
-        );
-        if (!response1.ok || !response2.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data1 = await response1.json();
-        const data2 = await response2.json();
-        setWho(trimText(data1.content.rendered, 100));
-        setWhoTitle(data1.title.rendered);
-        setWhat(trimText(data2.content.rendered, 220));
-        setWhatTitle(data2.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const infoSection = [
-    {
-      title: whotitle,
-      subSection: who,
-      subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-      id: "7"
-    },
-    {
-      title: whattitle,
-      subSection: what,
-      subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-      id: "9"
-    },
-    {
-      title: "JOIN US",
-      subSection: "Join our school today, download our admissions form",
-      subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-      id: ""
-    },
-  ];
-
-  const trimText = (text, maxLength) => {
-    if (text.length <= maxLength) return text;
-    return text.substring(0, maxLength) + "...";
-  };
-
-  const handleDownload = () => {
-    // Replace with your file URL
-    const fileUrl =
-      "https://goldenplainspjs.com/wp-content/uploads/2024/05/JUNIOR-SCHL-ADM-TEMPLATE.docx";
-
-    // Create a temporary anchor element to trigger the download
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.setAttribute("download", ""); // This attribute triggers the download
-
-    // Append the anchor element to the body
-    document.body.appendChild(link);
-
-    // Programmatically click the link to trigger the download
-    link.click();
-
-    // Clean up: remove the temporary link from the DOM
-    document.body.removeChild(link);
-  };
-
   return (
-    <div className="flex flex-wrap gap-10 pb-10 justify-center text-blue-900 pt-10 bg-orange-100 shadow-lg">
-      {infoSection.map((info, index) => (
-        <div
-          key={index}
-          className={`${
-            index === 1 ? "bg-white shadow-2xl " : "bg-yellow-500"
-          } p-2 w-full md:w-1/4 lg:w-1/5 shadow-2xl `}
-        >
-          <div className="font-bold mb-2 pt-4 text-4xl  ">
-            {info.title}
-            <hr className="border-t-2 w-3/4 border-gray-400 mt-2" />
-          </div>
-          <div
-            className="mb-2 text-lg pt-5 pb-5 font-bold"
-            dangerouslySetInnerHTML={{ __html: info.subSection }}
-          ></div>
-
-          <div className="pt-5 pb-5">
-            <div
-              className={`${
-                index === 1 ? "bg-yellow-500 shadow-2xl " : "bg-white"
-              } flex w-48 p-2 shadow-lg font-semibold`}
-            >
-              {info.id ? (
-                <Link to={"/about"}>
-                  <div>ReadMore</div>
-                </Link>
-              ) : (
-                <div onClick={handleDownload}>Download File</div>
-              )}
-              <div className="pt-1 flex">
-                <FaChevronRight className="" />
-                <FaChevronRight className="" />
-              </div>
+    <div className="main flex flex-wrap gap-10 pb-10 justify-center text-blue-900 pt-10 bg-orange-100 shadow-lg">
+      <div className="isections">
+        <div className="isection-1">
+          <div className="i-section-content">
+            <div className="i-section-p">
+              <h1 className="i-section-p-p">Who we are</h1>
+              <p className="section-pp">
+              Golden Plains School is a beacon of educational excellence, dedicated to nurturing young minds and fostering a lifelong love of learning. Our school community is built on the principles of integrity, inclusivity, and innovation, where every student is empowered to reach their full potential.
+              </p>
+              <button className="section-button">Read More</button>
+            </div>
+            <div className="kids-img">
+              <img src={kids} className="image-itself" alt="Kids"></img>
             </div>
           </div>
         </div>
-      ))}
+
+
+        <div className="isection-2">
+          <div className="i-section-content-2">
+            <div className="kids-img-2">
+                  <img src={kidss} className="image-itself-2" alt="Kidss"></img>
+            </div>
+            <div className="i-section-p-2">
+                  <h1>What we do</h1>
+                  <p className="section-pp-2">
+                  Golden Plains School is a beacon of educational excellence, dedicated to nurturing young minds and fostering a lifelong love of learning. Our school community is built on the principles of integrity, inclusivity, and innovation, where every student is empowered to reach their full potential.
+                  </p>
+                  <button className="section-button-2">Read More</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="isection-3">
+        <div className="i-section-p-3">
+        <div className="i-section-content-2">
+            <div className="i-section-p-2">
+                  <h1>Join us</h1>
+                  <p className="section-pp-2">
+                    Become a part of the Golden Plains School family and embark on a journey of lifelong learning and personal growth. We welcome students from diverse backgrounds and offer a supportive environment where every individual is valued. Join us to experience a vibrant, inclusive community that nurtures your talents and encourages you to achieve your best.
+                                </p>
+                  <button className="section-button-3">Download application file</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
   );
 }

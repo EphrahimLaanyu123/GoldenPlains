@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
 import Sports from "../assets/sport.png";
 import kids from "../assets/DSC_5976.jpg";
+import Footer from './Footer'
+
 
 function ArtsAndSports() {
     return (
@@ -39,6 +41,8 @@ function ArtsAndSports() {
                     </div>
                 </div>
             </div>
+            <Footer/>
+
         </div>
     );
 }

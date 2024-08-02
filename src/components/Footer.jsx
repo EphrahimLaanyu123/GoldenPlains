@@ -5,10 +5,11 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoYoutube } from "react-icons/io";
+import '../index.css';
 
 function Footer() {
   return (
-    <div className="bg-sky-900">
+    <div className="bg-sky-900 font-cormorant">
       <div className="text-white py-6 pl-4 pr-4 md:pl-20 md:pr-20">
         <hr className="border-t-8 border-white" />
       </div>

@@ -22,6 +22,8 @@ import RegisterPage from "./login/RegisterPage";
 import ArtsAndSports from "./components/ArtsandSports";
 
 
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -36,7 +38,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/social-science" element={<Gallery />} />
         <Route exact path="/gallery" element={<Gallery />} />
         <Route exact path="/social" element={<Social />} />
-        <Route exact path="/stem" element={<Stem />} />
         <Route exact path="/admissions" element={<Admissions/>}/>
         <Route exact path="/curriculum/:id" element={<DetailCurriculum/>}/>
         <Route exact path="/careers" element={<Careers/>}/>
@@ -47,6 +48,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/login" element={<LoginPage/>}/>
         <Route exact path="/register" element={<RegisterPage/>}/>
         <Route exact path="/arts-and-sports" element={<ArtsAndSports/>}/>
+        <Route exact path="/social-sciences" element={<ArtsAndSports/>}/>
+        <Route exact path="/stem" element={<ArtsAndSports/>}/>
         {/* <Route exact path="/curriculum/:id" element={<Det/>}/> */}
       </Routes>
     </BrowserRouter>

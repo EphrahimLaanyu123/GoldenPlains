@@ -3,6 +3,7 @@
 @tailwind utilities;
 /* Slick slider default styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rhodium+Libre&display=swap');
 
 
 body{
@@ -24,3 +25,7 @@ body{
   color: #ffed4a; /* Change the color of the active dot */
 }
 
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}

@@ -9,7 +9,7 @@ import Join from './components/Join'
 import CommunitySpace from './components/CommunitySpace'
 import MapComponent from './components/Maps'
 import Footer from './components/Footer'
-import AdminLogIn from './login/AdminLogIn'
+
 
 
 
@@ -23,7 +23,7 @@ function Home() {
       <Space/>
       <Curriculum/>
       <Space/>
-      <CoCurriculum/>
+      {/* <CoCurriculum/> */}
       <Space/>
       <Join/>
       <Space/>
@@ -32,7 +32,6 @@ function Home() {
       <MapComponent/>
       <Space/>
       <Footer/>
-      <AdminLogIn></AdminLogIn>
     </div>
   )
 }

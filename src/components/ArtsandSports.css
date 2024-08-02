@@ -35,15 +35,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: left; 
+    text-align: left; 
     gap: 60px;
 }
 
 .title {
     font-size: 2.5rem; 
     margin: 0; 
-    text-align: center;
+    text-align: left;
     font-family: Cormorant Garamond;
 }
 

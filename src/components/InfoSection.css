@@ -1,0 +1,126 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.isections {
+    background: linear gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    width: 80%;
+    height: 100%;
+    font-family: Cormorant Garamond;
+    justify-content: center;
+}
+
+.i-section-content{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    
+}
+
+
+.isection-1 {
+    width: 100%;
+    height: 60%;
+    background-color: aliceblue;
+
+}
+.i-section-p {
+    font-size: 3.5rem;
+    color: black;
+    width: 60%;
+    font-weight: 2rem;
+    padding: 40px;
+ 
+}
+
+
+
+.kids-img {
+    width: 50%;
+    height: 100%;
+}
+
+.image-itself {
+    width: 1000%;
+    height: 100%;
+
+}
+
+.section-pp {
+    font-size: 1.5rem;
+}
+
+.section-button {
+    color: rgb(236, 139, 12);
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.isection-2 {
+    width: 100%;
+    height: 60%;
+    background-color: FFEDD5;
+
+}
+
+.i-section-p-2 {
+    font-size: 3.5rem;
+    color: black;
+    width: 60%;
+    font-weight: 2rem;
+    padding: 40px;
+}
+
+
+.kids-img-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.image-itself-2 {
+    width: 1000%;
+    height: 100%;
+
+}
+
+.section-pp-2 {
+    font-size: 1.5rem;
+}
+
+.section-button-2 {
+    color: rgb(236, 139, 12);
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.i-section-content-2 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.i-section-content-3{
+   padding: 100px;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.isection-3 {
+    background-color: aliceblue;
+}
+
+.section-button-3 {
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
