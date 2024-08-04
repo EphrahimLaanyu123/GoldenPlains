@@ -23,7 +23,7 @@ function Home() {
       <Space/>
       <Curriculum/>
       <Space/>
-      {/* <CoCurriculum/> */}
+      <CoCurriculum/>
       <Space/>
       <Join/>
       <Space/>

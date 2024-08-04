@@ -35,21 +35,43 @@
     padding: 20px;
 }
 
-.underline {
-    width: 100%;
+.underline-1 {
+    width: 60%;
     height: 2px;
-    background-color: black;
+    background-color: #F7B000;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .images-div {
     width: 60%;
     display: flex;
-
+    justify-content: space-around;
 }
 
 .images-div img {
     width: 300px;
     height: 500px;
     object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.images-div img:hover {
+    filter: brightness(50%);
+    transform: scale(1.1);
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+}
+
+.link-container a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #ff9b05;
+    text-decoration: underline;
 }

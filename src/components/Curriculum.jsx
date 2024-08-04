@@ -64,7 +64,12 @@ function Curriculum() {
                         <div className="curriculum-description">
                             Our CBC junior school section is <br /> guided by the ministry of education  <br />guidelines.<br /> Golden Plains will provide  the <br />students with the  opportunity to<br /> follow any  of the available pathways <br />since  we have set up infrastructure <br />that can support all three.
                         </div>
-                        <div className="underline"></div>
+                        <div className="underline-1"></div>
+                        <div className="link-container"> 
+                            <Link>Social</Link>
+                            <Link to='./arts-and-sports'>Arts and Sports</Link>
+                            <Link>STEM</Link>
+                        </div>
                     </div>
                     <div className="images-div">
                         <img src={Sports} alt="Sports" />
