@@ -1,226 +1,175 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link for internal navigation
+import "./About.css";
 import Navbar from "./components/Nav";
-import bgImage from "./assets/Hero5.png"; // Import your background image file
+import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_6014.jpg";
+import book from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/open-book.png";
+import ball from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/soccer-ball-variant.png";
+import headphones from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/music.png";
+import solutions from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/solutions.png";
+import Footer from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Footer.jsx";
 
 function DetailPage() {
-  const title = "About Us";
-  const [who, setWho] = useState({});
-  const [title2, setTitle] = useState("");
-  const [what, setWhat] = useState({});
-  const [title3, setTitle3] = useState("");
-  const [title4, setTitle4] = useState("");
-  const [curriculum, setCurriculum] = useState("");
-  const [err, setError] = useState({});
-  const [about, setAbout] = useState();
-  const [aboutt, setAboutt] = useState("");
+  const [activeSection, setActiveSection] = useState("what-we-do");
 
-  const [mission, setMission] = useState("");
-  const [missiont, setMissiont] = useState("");
-
-  const [values, setValues] = useState("");
-  const [values2, setValues2] = useState("");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/102"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setValues(data.content.rendered);
-        setValues2(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/97"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setMission(data.content.rendered);
-        setMissiont(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/95"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setAbout(data.content.rendered);
-        setAboutt(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/7"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setWho(data.content.rendered);
-        setTitle(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/9"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setWhat(data.content.rendered);
-        setTitle3(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://goldenplainspjs.com/wp-json/wp/v2/posts/88"
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setCurriculum(data.content.rendered);
-        setTitle4(data.title.rendered);
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchData();
-  }, []);
+  const items1 = [
+    {
+      image: book,
+      title: "Studies",
+      text: "Our library offers a vast collection of books to inspire and educate students."
+    },
+    {
+      image: ball,
+      title: "Sports",
+      text: "We promote an active lifestyle with various physical education and sports activities."
+    }
+  ];
+  
+  const items2 = [
+    {
+      image: headphones,
+      title: "Music",
+      text: "Explore musical talents and skills through our engaging music program and activities."
+    },
+    {
+      image: solutions,
+      title: "Creative",
+      text: "Engage in creative activities that foster innovation and artistic expression."
+    }
+  ];
 
   return (
     <div className="relative">
-      <Navbar />
-      <div
-        className="h-[40vh] relative flex justify-center items-center font-bold text-4xl md:text-8xl text-white pt-8 md:pt-52"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-blue-900 opacity-50"></div>
-        <div className="relative z-10">{title}</div>
+      <Navbar className="navbar" />
+      <div className="about-1">
+        <img src={students} className="about-1-img" alt="Students" />
+        <div className="overlay"></div>
+        <div className="centered-text">
+          <h1>About Us</h1>
+          <p>Empowering students to achieve their full potential</p>
+        </div>
       </div>
-      <div className="bg-orange-100 px-4 sm:px-8 lg:px-32 py-10">
-        <div className="bg-orange-100 shadow-2xl p-4 sm:p-8">
-          <div className="flex justify-center mb-4">
-            <div className="max-w-3xl p-1 w-40 bg-yellow-500 text-center font-bold text-blue-900">
-              {aboutt}
-            </div>
+      <div className="about-2">
+        <div className="why-us-div">
+          <h1 className="why-header">Why Choose Us</h1>
+          <p className="why-choose-us-text">
+            Our institution is dedicated to fostering a supportive and enriching environment for our students. We provide a well-rounded education that emphasizes academic excellence, personal growth, and extracurricular development. From our extensive library resources to our dynamic sports and music programs, we offer opportunities that cater to diverse interests and needs. Our committed staff ensures that every student receives the guidance and support necessary to thrive and achieve their full potential.
+          </p>
+        </div>
+        <div className="about-2-items">
+          <div className="item1-div">
+            {items1.map((item, index) => (
+              <div key={index} className="item">
+                <img src={item.image} alt={`item-${index}`} className="item-image" />
+                <h2>{item.title}</h2>
+                <p className="item-text">{item.text}</p>
+              </div>
+            ))}            
           </div>
-          <div className="flex justify-center pt-4 text-blue-900 font-bold">
-            <div
-              className="max-w-screen-lg w-full px-4 consistent-font"
-              dangerouslySetInnerHTML={{ __html: about }}
-            ></div>
+          <div className="item2">
+            {items2.map((item, index) => (
+              <div key={index} className="item">
+                <img src={item.image} alt={`item-${index}`} className="item-image" />
+                <h2>{item.title}</h2>
+                <p className="item-text">{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className="bg-orange-100 px-4 sm:px-8 lg:px-32 py-10">
-        <div className="bg-orange-100 shadow-2xl p-4 sm:p-8">
-          <div className="flex justify-center mb-4">
-            <div className="max-w-3xl p-1 w-40 bg-yellow-500 text-center font-bold text-blue-900">
-              {title2}
+
+      <div className="about-3">
+        <div className="section-content">
+          <div className="section-tabs">
+            <div className="tab-container">
+              <span 
+                className={`tab ${activeSection === 'what-we-do' ? 'active' : ''}`} 
+                onClick={() => setActiveSection('what-we-do')}
+              >
+                What We Do
+              </span>
+              <span 
+                className={`tab ${activeSection === 'who-we-are' ? 'active' : ''}`} 
+                onClick={() => setActiveSection('who-we-are')}
+              >
+                Who We Are
+              </span>
+              <div className="active-underline"></div>
             </div>
           </div>
-          <div
-            className="flex justify-center pt-4 text-blue-900 font-bold px-4 consistent-font"
-            dangerouslySetInnerHTML={{ __html: who }}
-          ></div>
-        </div>
-      </div>
-      <div className="bg-orange-100 px-4 sm:px-8 lg:px-32 py-10">
-        <div className="bg-orange-100 shadow-2xl p-4 sm:p-8">
-          <div className="flex justify-center mb-4">
-            <div className="max-w-3xl p-1 w-65 bg-yellow-500 text-center font-bold text-blue-900">
-              {missiont}
+          {activeSection === 'what-we-do' && (
+            <div className="content">
+              <h1>What We Do</h1>
+              <h2>Our Mission</h2>
+              <p>
+                Our mission is to create a supportive and inclusive environment where every student can excel. We focus on providing high-quality education that not only meets rigorous academic standards but also fosters personal growth and prepares students for future success.
+              </p>
+              <h2>Academic Excellence</h2>
+              <p>
+                We offer a challenging curriculum designed to inspire curiosity and critical thinking. Our diverse range of subjects caters to various interests, helping students discover and pursue their passions.
+              </p>
+              <h2>Personal Development</h2>
+              <p>
+                Beyond academics, we emphasize personal development through programs that build essential life skills. Activities and experiences are designed to boost confidence, leadership, and teamwork.
+              </p>
+              <h2>Extracurricular Activities</h2>
+              <p>
+                We provide numerous extracurricular opportunities, including sports, music, and arts. These activities complement academic learning and contribute to a balanced and engaging school experience.
+              </p>
+              <h2>Community Engagement</h2>
+              <p>
+                Our commitment to community involvement encourages students to participate in service projects. This fosters a sense of responsibility and empathy, helping students make a positive impact.
+              </p>
+              <h2>Supportive Environment</h2>
+              <p>
+                We create a safe and welcoming space where every student is valued. Our dedicated staff offers guidance and support to help students thrive academically and personally.
+              </p>
             </div>
-          </div>
-          <div className="flex justify-center pt-4 text-blue-900 font-bold px-4 consistent-font">
-            <div
-              className="max-w-screen-lg w-full px-4"
-              dangerouslySetInnerHTML={{ __html: mission }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-orange-100 px-4 sm:px-8 lg:px-32 py-10">
-        <div className="bg-orange-100 shadow-2xl p-4 sm:p-8">
-          <div className="flex justify-center mb-4">
-            <div className="max-w-3xl p-1 w-65 bg-yellow-500 text-center font-bold text-blue-900">
-              {values2}
+          )}
+          {activeSection === 'who-we-are' && (
+            <div className="content">
+              <h1>Who We Are</h1>
+              <h2>Our Values</h2>
+              <p>
+                We are driven by core values that define our institution and guide our actions. Integrity, respect, and excellence are at the heart of everything we do. We believe in fostering a culture of collaboration and inclusivity, where every student feels valued and supported.
+              </p>
+              <h2>Our Team</h2>
+              <p>
+                Our dedicated team of educators and staff are passionate about nurturing each student’s potential. With diverse backgrounds and expertise, they bring a wealth of knowledge and experience to our school community.
+              </p>
+              <h2>Our History</h2>
+              <p>
+                Founded with a vision to provide quality education, our institution has grown and evolved over the years. We have a rich history of achievements and milestones that reflect our commitment to educational excellence.
+              </p>
+              <h2>Community Involvement</h2>
+              <p>
+                We actively engage with the local community through various outreach programs and partnerships. Our goal is to build strong relationships and contribute positively to the society we are part of.
+              </p>
+              <h2>Future Goals</h2>
+              <p>
+                Looking ahead, we are focused on continuous improvement and innovation. Our future goals include expanding our programs, enhancing facilities, and further enriching the student experience.
+              </p>
             </div>
-          </div>
-          <div className="flex justify-center pt-4 text-blue-900 font-bold px-4 consistent-font">
-            <div
-              className="max-w-screen-lg w-full px-4"
-              dangerouslySetInnerHTML={{ __html: values }}
-            ></div>
-          </div>
+          )}
         </div>
       </div>
-      <div className="bg-orange-100 px-4 sm:px-8 lg:px-32 py-10">
-        <div className="bg-orange-100 shadow-2xl p-4 sm:p-8">
-          <div className="flex justify-center mb-4">
-            <div className="max-w-3xl p-1 w-65 bg-yellow-500 text-center font-bold text-blue-900">
-              {title4}
-            </div>
-          </div>
-          <div className="flex justify-center pt-4 text-blue-900 font-bold px-4 consistent-font">
-            <div
-              className="max-w-screen-lg w-full px-4"
-              dangerouslySetInnerHTML={{ __html: curriculum }}
-            ></div>
-          </div>
+
+
+      <div className="additional-texts">
+        <h2>Learn more about us</h2>
+        <p>Check out the following links:</p>
+        <div className="links-1">
+          <Link to="/arts-and-sports">Arts & Sports</Link>
+          <Link to="/Stem">Stem</Link>
+          <Link to="/Social">Upcoming Events</Link>
+        </div>
+        <div className="links-2">
+          <Link to="/Contact">Contact</Link>
+          <Link to="/apply">Apply</Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

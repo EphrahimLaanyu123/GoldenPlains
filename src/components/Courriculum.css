@@ -3,8 +3,12 @@
 .courriculum {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 40px 0;
+  height: 100vh;
+  background-color: #FFEDD5;
 }
+
 
 .the-container {
   width: 80%;

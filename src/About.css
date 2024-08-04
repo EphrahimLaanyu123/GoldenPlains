@@ -1,0 +1,245 @@
+/* About.css */
+.relative {
+  background-color: #FFEDD5;
+}
+
+.about-1 {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.about-1-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+}
+
+.centered-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: white;
+  text-align: center;
+}
+
+.centered-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.centered-text p {
+  font-size: 1.5rem;
+}
+
+.about-2 {
+  display: flex;
+  height: 100%;
+  margin-top: 10rem;
+  background-color: #FFEDD5;
+  text-align: center;
+  gap: 4rem;
+}
+
+.about-2-items {
+  width: 40%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 1rem; /* Padding inside the card */
+  width: 100%; /* Make sure it fits well in the container */
+  max-width: 300px; /* Adjust as needed for the card size */
+  margin: 1rem; /* Space between cards */
+}
+
+.item-image {
+  width: 60px; /* Slightly larger image */
+  height: 60px;
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+.item-text {
+  font-size: 0.9rem; /* Slightly smaller text for readability */
+  text-align: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.why-us-div {
+  margin-left: 10rem;
+  text-align: left;
+  width: 40%;
+}
+
+.why-header {
+  font-size: 4rem;
+}
+
+.why-choose-us-text {
+  font-size: 1.5rem;
+}
+
+.item h2 {
+  font-size: 2rem;
+}
+
+.about-3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #FFEDD5;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
+
+}
+
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tab-container {
+  display: flex;
+  position: relative;
+}
+
+.tab {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #333;
+  position: relative;
+  z-index: 1; 
+}
+
+.tab::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: transparent;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active::after {
+  background: #F7B000;
+}
+
+.section-tabs::after {
+  content: '';
+  display: block;
+  height: 2px; 
+  background: black;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  z-index: 0; 
+}
+
+.section-content {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  background-color: #FFEDD5;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.section-tabs .active-underline {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  background: #333; /* Color of the underline when active */
+  transition: width 0.3s ease; /* Smooth transition for underline width */
+}
+
+/* Adjust width based on active tab */
+.tab.active ~ .active-underline {
+  width: calc(100% / 2); /* Assuming two tabs; adjust if you have more tabs */
+}
+
+.tab-container {
+  position: relative;
+}
+
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-4 {
+  /* Add any styles needed for the about-4 section */
+}
+
+
+.additional-texts {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-top: 2px solid #ddd;
+}
+
+.additional-texts h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.additional-texts p {
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.links-1 {
+  display: flex;
+}

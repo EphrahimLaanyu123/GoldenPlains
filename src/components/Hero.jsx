@@ -20,7 +20,7 @@ const slides = [
   },
   {
     image: Hero2,
-    title: "Inspiring Minds",
+    title: "Inspiring",
     subtitle: "Cultivating Excellence",
     description: "Fostering a nurturing environment where students excel.",
     description2: "Experience a blend of tradition and innovation in education.",
@@ -29,7 +29,7 @@ const slides = [
   },
   {
     image: Hero5,
-    title: "Innovative Learning",
+    title: "Innovatively",
     subtitle: "Shaping Tomorrow's Leaders",
     description: "Providing tools and resources for the leaders of tomorrow.",
     description2: "Embrace a future full of possibilities with us.",

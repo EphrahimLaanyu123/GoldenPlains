@@ -55,14 +55,14 @@ function CommunitySpace() {
   };
 
   return (
-    <div className="bg-orange-100 pb-20">
-      <div className="flex justify-center font-bold text-5xl text-blue-900 pt-4">
+    <div className="bg-orange-100 pb-20 font-cormorant">
+      <div className="flex justify-center font-bold text-5xl text-black-900 pt-4">
         COMMUNITY SPACE
       </div>
-      <div className="flex justify-center font-bold text-3xl text-blue-900 pt-3 text-center px-4">
+      <div className="flex justify-center font-bold text-3xl text-black-900 pt-3 text-center px-4">
         OUR GOLDEN PLAINS COMMUNITY AND WHAT THEY HAVE BEEN UPTO
       </div>
-      <div className="flex justify-center pt-10 text-blue-900 px-4">
+      <div className="flex justify-center pt-10 text-black-900 px-4">
         <Slider {...settings} className="w-full max-w-5xl">
           {space.map((profile, index) => (
             <div key={index} className="p-4">
