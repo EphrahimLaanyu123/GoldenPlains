@@ -16,7 +16,6 @@ import Footer from './components/Footer'
 function Home() {
   return (
     <div className="bg-orange-100 min-h-screen">
-
       <HeroSlider/>
       <Space/>
       <InfoSection/>

@@ -161,7 +161,7 @@ function DetailPage() {
         <div className="links-1">
           <Link to="/arts-and-sports">Arts & Sports</Link>
           <Link to="/Stem">Stem</Link>
-          <Link to="/Social">Upcoming Events</Link>
+          <Link to="/social-sciences">Social Sciences</Link>
         </div>
         <div className="links-2">
           <Link to="/Contact">Contact</Link>

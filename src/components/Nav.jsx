@@ -10,10 +10,7 @@ const ContactButton = () => {
   };
 
   return (
-    <button
-      onClick={handleContactClick}
-      className="contact-button"
-    >
+    <button onClick={handleContactClick} className="contact-button">
       CONTACT US
     </button>
   );
@@ -21,9 +18,14 @@ const ContactButton = () => {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutSubMenuOpen, setAboutSubMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleAboutSubMenu = () => {
+    setAboutSubMenuOpen(!aboutSubMenuOpen);
   };
 
   return (
@@ -39,23 +41,10 @@ const Navbar = () => {
             <div>SCHOOL</div>
           </div>
         </div>
-        <div className="menu-items hidden-on-mobile">
-          <Link to="/" className="menu-link">HOME</Link>
-          <Link to="/about" className="menu-link">ABOUT US</Link>
-          <Link to="/admissions" className="menu-link">ADMISSIONS</Link>
-          <Link to="/gallery" className="menu-link">GALLERY</Link>
-          <Link to="/careers" className="menu-link">CAREERS</Link>
-        </div>
-        <div className="contact-button-container hidden-on-mobile">
-          <ContactButton />
-        </div>
+
         <div className="menu-toggle">
           <button onClick={toggleMenu} className="menu-icon">
-            {menuOpen ? (
-              <AiOutlineClose size={24} />
-            ) : (
-              <AiOutlineMenu size={24} />
-            )}
+            {menuOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
           </button>
         </div>
       </div>
@@ -63,7 +52,16 @@ const Navbar = () => {
         <div className="mobile-menu">
           <div className="mobile-menu-items">
             <Link to="/" className="menu-link">HOME</Link>
-            <Link to="/about" className="menu-link">ABOUT US</Link>
+            <button onClick={toggleAboutSubMenu} className="menu-link">
+              ABOUT US {aboutSubMenuOpen ? "▲" : "▼"}
+            </button>
+            {aboutSubMenuOpen && (
+              <div className="submenu">
+                <Link to="/about/why-us" className="submenu-link">Why Us</Link>
+                <Link to="/about/arts-sports" className="submenu-link">Arts and Sports</Link>
+                {/* Add more sub-links as needed */}
+              </div>
+            )}
             <a
               href="https://goldenplainspjs.com/wp-content/uploads/2024/05/JUNIOR-SCHL-ADM-TEMPLATE.docx"
               download

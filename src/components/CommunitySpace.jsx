@@ -55,27 +55,27 @@ function CommunitySpace() {
   };
 
   return (
-    <div className="bg-orange-100 pb-20 font-cormorant">
-      <div className="flex justify-center font-bold text-5xl text-black-900 pt-4">
+    <div className="bg-orange-100  font-cormorant">
+      <div className="flex justify-center font-bold text-6xl md:text-7xl text-black-900 pt-8">
         COMMUNITY SPACE
       </div>
-      <div className="flex justify-center font-bold text-3xl text-black-900 pt-3 text-center px-4">
+      <div className="flex justify-center font-bold text-4xl md:text-5xl text-black-900 pt-4 text-center px-6">
         OUR GOLDEN PLAINS COMMUNITY AND WHAT THEY HAVE BEEN UPTO
       </div>
-      <div className="flex justify-center pt-10 text-black-900 px-4">
-        <Slider {...settings} className="w-full max-w-5xl">
+      <div className="flex justify-center pt-12 px-6">
+        <Slider {...settings} className="w-full max-w-6xl">
           {space.map((profile, index) => (
-            <div key={index} className="p-4">
-              <div className="shadow-lg rounded-lg">
-                <div className="flex pl-10 py-4">
+            <div key={index} className="p-6">
+              <div className="shadow-2xl rounded-lg border-yellow-500 overflow-hidden">
+                <div className="flex items-center pl-6 py-6">
                   <img
                     src={profile.image}
                     alt={profile.Name}
-                    className="w-[70px] h-[70px] border-4 border-yellow-500 rounded-full"
+                    className="w-[100px] h-[100px] border-4 border-yellow-500 rounded-full"
                   />
-                  <p className="text-2xl font-bold pl-4">{profile.Name}</p>
+                  <p className="text-3xl font-bold pl-6">{profile.Name}</p>
                 </div>
-                <div className="text-center px-10 pb-4">
+                <div className="text-center px-6 pb-6 text-xl font-medium text-black-700">
                   {profile.Description}
                 </div>
               </div>

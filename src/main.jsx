@@ -9,7 +9,7 @@ import WhatWeDo from "./WhatWeDo";
 import Gallery from "./Gallery";
 import Arts from "./Arts";
 import Social from "./Social";
-import Stem from "./Stem";
+import Stem from "./components/Stem";
 import DetailCurriculum from "./DetailCurriculum";
 import Contact from "./Contact";
 
@@ -20,6 +20,9 @@ import AdminLogIn from "./login/AdminLogIn";
 import LoginPage from "./login/LoginPage";
 import RegisterPage from "./login/RegisterPage";
 import ArtsAndSports from "./components/ArtsandSports";
+import SocialSciences from "./components/SocialSciences";
+import ScrollToTop from "./components/ScrollToTop";
+import Nav2 from "./components/Nav2";
 
 
 
@@ -27,7 +30,9 @@ import ArtsAndSports from "./components/ArtsandSports";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
+ 
         {/* <Route exact path="/" element={<Navbar/>}/> */}
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
@@ -48,8 +53,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/login" element={<LoginPage/>}/>
         <Route exact path="/register" element={<RegisterPage/>}/>
         <Route exact path="/arts-and-sports" element={<ArtsAndSports/>}/>
-        <Route exact path="/social-sciences" element={<ArtsAndSports/>}/>
-        <Route exact path="/stem" element={<ArtsAndSports/>}/>
+        <Route exact path="/social-sciences" element={<SocialSciences/>}/>
+        <Route exact path="/social-sciences" element={<SocialSciences/>}/>
+        <Route exact path="/nav" element={<Nav2/>}/>
+        
         {/* <Route exact path="/curriculum/:id" element={<Det/>}/> */}
       </Routes>
     </BrowserRouter>

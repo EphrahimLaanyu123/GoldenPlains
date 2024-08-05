@@ -1,38 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
-import Sports from "../assets/sport.png";
-import kids from "../assets/DSC_5976.jpg";
-import Footer from './Footer'
+import SocialSciencesImage from "../assets/DSC_5967.jpg";
+import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5947.jpg";
+import Footer from './Footer';
+import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
 
 
-function ArtsAndSports() {
+function SocialSciences() {
     return (
-        <div className="arts-and-sports-container">
+        <div className="social-sciences-container">
+            <Navbar></Navbar>
             <header className="header">
-                <img src={Sports} alt="Arts and Sports" className="header-image" />
+                <img src={SocialSciencesImage} alt="Social Sciences" className="header-image" />
             </header>
 
             <div className='content-container'>
                 <div className='sides'>
                     <div className='right-side'>
-                        <h1 className="title">Arts and Sports</h1>
+                        <h1 className="title">Social Sciences</h1>
                         <p className="section-description">
-                            Welcome to our Arts and Sports program. Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members, ensure that students receive the best education and training. We offer a wide range of extracurricular activities and opportunities for competitions and showcases. Our strong focus on holistic development helps students to grow not only academically but also personally. Our Arts and Sports program is designed to cater to the needs and interests of all students, providing them with the skills and experiences necessary for personal growth and development.
+                            Welcome to our Social Sciences program. Our curriculum is designed to provide students with a deep understanding of human behavior, societies, and cultures. We offer courses in history, geography, psychology, sociology, and political science, taught by experienced and knowledgeable faculty members. Our program emphasizes critical thinking, research skills, and a global perspective. Students will engage in various activities, including debates, field trips, and research projects, that enhance their learning experience and prepare them for further studies and careers in social sciences.
                         </p>
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                        <p className='section-2-p'>"Welcome to our Arts and Sports program. <br></br>Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br></br>Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members", <br></br>John Doe.
-                        </p>
+                            <p className='section-2-p'>"Our Social Sciences program is committed to developing informed and engaged citizens. <br></br>We strive to foster a deep understanding of societal issues and encourage students to contribute positively to their communities. <br></br>Through our comprehensive curriculum and experiential learning opportunities", <br></br>Jane Smith.
+                            </p>
                         </div>
-
-                    <img src={kids} alt="Arts and Sports" className="header-image-2" />
+                        <img src={students} alt="Social Sciences" className="header-image-2" />
                     </div>
                     <div className='left-side'>
                         <h1 className='ourcurr'>Our Curriculum</h1>
                         <Link to="/stem" className="section-link">STEM</Link>
-                        <Link to="/social-sciences" className="section-link">Social Sciences</Link>   
+                        <Link to="/arts-and-sports" className="section-link">Arts and Sports</Link>   
                         <p className='other'>Check out our other curriculum</p>      
                         <div className="underline"></div>
                         <div className="apply-section">
@@ -42,9 +43,8 @@ function ArtsAndSports() {
                 </div>
             </div>
             <Footer/>
-
         </div>
     );
 }
 
-export default ArtsAndSports;
+export default SocialSciences;

@@ -1,0 +1,196 @@
+/* General styles */
+.nav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: transparent; /* Keep background transparent */
+ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation effect */
+}
+
+
+.nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60rem;
+    padding: 1rem;
+    background-color: transparent; 
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Adjust spacing as needed */
+}
+
+.nav__logo img {
+    width: 100px;
+    height: 100px; 
+}
+
+.nav__logo p {
+    color: #fff;
+    margin: 0;
+    line-height: 1.2; /* Adjust line height as needed */
+    font-size: 1.4rem; /* Adjust font size as needed */
+}
+
+.nav__toggle {
+    color: #fff; /* White text color for contrast */
+    font-size: 1.5rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #ff6600; /* Brighter orange background */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 0.5rem 1rem; /* Padding for better size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.nav__toggle:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.nav__toggle:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Custom focus outline */
+}
+
+
+.nav__dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #222; /* Brighter background color for the dropdown */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    border-left: 2px solid #555; /* Border to define the dropdown area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for subtle lift effect */
+}
+
+.nav__dropdown.open {
+    transform: translateX(0);
+}
+
+.nav__dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__dropdown-item {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.nav__dropdown-about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    cursor: pointer; /* Make the entire section clickable */
+}
+
+.nav__about-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Adjust as needed */
+    flex-grow: 1;
+}
+
+.nav__about-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* Dropdown menus */
+.nav__about-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    padding-left: 1rem;
+    background-color: #333; /* Slightly lighter background for the dropdown */
+}
+
+.nav__about-dropdown.open {
+    display: block;
+}
+
+.nav__about-dropdown li {
+    padding: 0.5rem 0;
+}
+
+.nav__about-dropdown a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__about-dropdown a:hover {
+    text-decoration: underline;
+}
+
+.nav__curriculum-dropdown, .nav__co-curriculum-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    padding-left: 1rem;
+    background-color: #444; /* Slightly lighter background for these dropdowns */
+}
+
+.nav__curriculum-dropdown.open, .nav__co-curriculum-dropdown.open {
+    display: block;
+}
+
+.nav__curriculum-dropdown li, .nav__co-curriculum-dropdown li {
+    padding: 0.5rem 0;
+}
+
+.nav__curriculum-dropdown a, .nav__co-curriculum-dropdown a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__curriculum-dropdown a:hover, .nav__co-curriculum-dropdown a:hover {
+    text-decoration: underline;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: none;
+}
+
+.nav__overlay.active {
+    display: block;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .nav__container {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav__logo img {
+        width: 50px; /* Adjust width for smaller screens */
+        height: 50px; /* Adjust height for smaller screens */
+    }
+
+    .nav__logo p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}

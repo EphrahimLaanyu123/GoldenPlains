@@ -1,54 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 
-
 .join-us {
-    /* Background color and text color */
-    background-color: #f59e0b; /* Tailwind yellow-500 */
-    color: black; /* Tailwind sky-900 */
-    
-    /* Padding */
-    padding: 0.5rem 1rem; /* py-2 px-4 */
-    
-    /* Font styles */
-    font-weight: 700; /* Tailwind font-bold */
-    font-size: 1.125rem; /* Tailwind text-lg */
-    font-family: "Rhodium Libre", serif;
-    
-    /* Border radius and box shadow */
-    border-radius: 0.5rem; /* Tailwind rounded-full */
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* Tailwind shadow-md */
-    
-    /* Layout */
-    position: absolute;
-    bottom: 13rem; /* Tailwind bottom-52 */
-    left: 8rem; /* Tailwind left-32 */
-    
-    /* Text transformation and transition */
-    text-transform: uppercase; /* Tailwind uppercase */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+  background-color: #f59e0b; /* Tailwind yellow-500 */
+  color: black; /* Tailwind sky-900 */
   
-  /* Hover state */
-  .join-us:hover {
-    background-color: #f8e83d; /* Slightly lighter yellow */
-    transform: translateY(-0.1875rem); /* Tailwind -translate-y-1 */
-  }
+  /* Padding */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
   
-  /* Active state */
-  .join-us:active {
-    background-color: #e5c636; /* Darker yellow */
-    transform: translateY(0.0625rem); /* Tailwind translate-y-0.5 */
-  }
+  /* Font styles */
+  font-weight: 700; /* Tailwind font-bold */
+  font-size: 1.125rem; /* Tailwind text-lg */
+  font-family: "Rhodium Libre", serif;
   
+  /* Border radius and box shadow */
+  border-radius: 0.5rem; /* Tailwind rounded-full */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* Tailwind shadow-md */
+  
+  /* Layout */
+  position: absolute;
+  bottom: 13rem; /* Tailwind bottom-52 */
+  left: 8rem; /* Tailwind left-32 */
+  
+  /* Text transformation and transition */
+  text-transform: uppercase; /* Tailwind uppercase */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .slide-transition {
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .join-us {
-    font-family: 'YourPreferredFont', sans-serif; /* Make sure to include your font here */
-  }
-  
+.join-us:hover {
+  background-color: #f8e83d; /* Slightly lighter yellow */
+  transform: translateY(-0.1875rem); /* Tailwind -translate-y-1 */
+}
+
+.join-us:active {
+  background-color: #e5c636; /* Darker yellow */
+  transform: translateY(0.0625rem); /* Tailwind translate-y-0.5 */
+}
+
+.slide-transition {
+  transition: opacity 1s ease-in-out;
+}

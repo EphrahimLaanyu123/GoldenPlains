@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Sports from "../assets/sport.png";
 import Stem from "../assets/stem.png";
-import Social from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5920.jpg";
-import { Link } from "react-router-dom";
+import Social from "../assets/DSC_5920.jpg";
 import './Curriculum.css';
 
 function Curriculum() {
@@ -15,7 +14,6 @@ function Curriculum() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Example id; adjust based on your actual ID or dynamic fetching
                 const response = await fetch(
                     `https://goldenplainspjs.com/wp-json/wp/v2/posts/1`
                 );
@@ -34,24 +32,10 @@ function Curriculum() {
     }, []);
 
     const infoSection = [
-        { title: "ARTS AND SPORTS", subSection: all, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Sports },
-        { title: "SOCIAL SCIENCES", subSection: drama, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Social },
-        { title: "STEM", subSection: sci, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Stem }
+        { title: "ARTS AND SPORTS", subSection: all, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Sports, link: "/arts-and-sports" },
+        { title: "SOCIAL SCIENCES", subSection: drama, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Social, link: "/social-sciences" },
+        { title: "STEM", subSection: sci, subTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit", image: Stem, link: "/stem" }
     ];
-
-    // Generate URL from title
-    const generateLink = (title) => {
-        switch (title) {
-            case "ARTS AND SPORTS":
-                return "/arts-and-sports";
-            case "SOCIAL SCIENCES":
-                return "/social-sciences";
-            case "STEM":
-                return "/stem";
-            default:
-                return "/";
-        }
-    };
 
     return (
         <div className="curriculum-container">
@@ -66,15 +50,18 @@ function Curriculum() {
                         </div>
                         <div className="underline-1"></div>
                         <div className="link-container"> 
-                            <Link>Social</Link>
-                            <Link to='./arts-and-sports'>Arts and Sports</Link>
-                            <Link>STEM</Link>
+                            <Link to="/social-sciences">Social</Link>
+                            <Link to="/arts-and-sports">Arts and Sports</Link>
+                            <Link to="/stem">STEM</Link>
                         </div>
                     </div>
                     <div className="images-div">
-                        <img src={Sports} alt="Sports" />
-                        <img src={Social} alt="Social Sciences" />
-                        <img src={Stem} alt="STEM" />
+                        {infoSection.map((section, index) => (
+                            <Link to={section.link} key={index} className="image-container">
+                                <img src={section.image} alt={section.title} />
+                                <div className="hover-text">{section.title}</div>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>

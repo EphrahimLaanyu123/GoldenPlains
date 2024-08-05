@@ -5,7 +5,7 @@ import Hero1 from "../assets/structure.png";
 import Hero2 from "../assets/heroImage3.png";
 import Hero5 from "../assets/HeroImage5.png";
 import { Link } from "react-router-dom";
-import Navbar from "./Nav"; // Import Navbar component
+import Nav2 from "./Nav2"; // Import Nav2 component
 import './Hero.css'; // Import CSS file
 
 const slides = [
@@ -44,7 +44,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 6000); // Change slide every 3 seconds
+    }, 6000); // Change slide every 6 seconds
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
@@ -61,7 +61,7 @@ const HeroSlider = () => {
 
   return (
     <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
-      <Navbar />
+      <Nav2 /> {/* Use Nav2 component */}
 
       {slides.map((slide, index) => (
         <div

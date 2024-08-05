@@ -1,37 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
-import Sports from "../assets/sport.png";
-import kids from "../assets/DSC_5976.jpg";
-import Footer from './Footer'
+import StemImage from "../assets/DSC_5967.jpg";
+import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_6055.jpg";
+import Footer from './Footer';
+import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
 
 
 function Stem() {
     return (
-        <div className="arts-and-sports-container">
+        <div className="stem-container">
+            <Navbar></Navbar>
             <header className="header">
-                <img src={Sports} alt="Arts and Sports" className="header-image" />
+                <img src={StemImage} alt="STEM" className="header-image" />
             </header>
 
             <div className='content-container'>
                 <div className='sides'>
                     <div className='right-side'>
-                        <h1 className="title">Arts and Sports</h1>
+                        <h1 className="title">STEM</h1>
                         <p className="section-description">
-                            Welcome to our Arts and Sports program. Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members, ensure that students receive the best education and training. We offer a wide range of extracurricular activities and opportunities for competitions and showcases. Our strong focus on holistic development helps students to grow not only academically but also personally. Our Arts and Sports program is designed to cater to the needs and interests of all students, providing them with the skills and experiences necessary for personal growth and development.
+                            Welcome to our STEM program. Our Science, Technology, Engineering, and Mathematics curriculum is designed to provide students with a strong foundation in these critical areas. Our program emphasizes hands-on learning, problem-solving, and innovation. Students have access to state-of-the-art labs and technology, and our experienced faculty members are dedicated to fostering a love of discovery and learning. We offer a wide range of courses and extracurricular activities, including robotics, coding clubs, and science fairs, to inspire and engage our students. Our STEM program prepares students for further studies and careers in these dynamic fields.
                         </p>
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                        <p className='section-2-p'>"Welcome to our Arts and Sports program. <br></br>Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br></br>Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members", <br></br>John Doe.
-                        </p>
+                            <p className='section-2-p'>"Our STEM program is committed to nurturing the next generation of innovators and problem-solvers. <br></br>We believe in providing students with the skills and knowledge they need to succeed in a rapidly changing world. <br></br>Through our rigorous curriculum and hands-on learning opportunities", <br></br>Jane Smith.
+                            </p>
                         </div>
-
-                    <img src={kids} alt="Arts and Sports" className="header-image-2" />
+                        <img src={students} alt="STEM" className="header-image-2" />
                     </div>
                     <div className='left-side'>
                         <h1 className='ourcurr'>Our Curriculum</h1>
-                        <Link to="/stem" className="section-link">STEM</Link>
+                        <Link to="/arts-and-sports" className="section-link">Arts and Sports</Link>
                         <Link to="/social-sciences" className="section-link">Social Sciences</Link>   
                         <p className='other'>Check out our other curriculum</p>      
                         <div className="underline"></div>
@@ -42,7 +43,6 @@ function Stem() {
                 </div>
             </div>
             <Footer/>
-
         </div>
     );
 }
