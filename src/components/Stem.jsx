@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
+
 import StemImage from "../assets/DSC_5967.jpg";
-import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_6055.jpg";
-import Footer from './Footer';
-import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
+import students from "../assets/DSC_6055.jpg";
+
 
 
 function Stem() {
