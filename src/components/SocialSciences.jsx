@@ -5,12 +5,13 @@ import SocialSciencesImage from "../assets/DSC_5967.jpg";
 import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5947.jpg";
 import Footer from './Footer';
 import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
+import Nav2 from "./Nav2"; // Import Nav2 component
 
 
 function SocialSciences() {
     return (
         <div className="social-sciences-container">
-            <Navbar></Navbar>
+            <Nav2/>
             <header className="header">
                 <img src={SocialSciencesImage} alt="Social Sciences" className="header-image" />
             </header>

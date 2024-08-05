@@ -5,11 +5,13 @@ import Sports from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/asse
 import kids from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5832.jpg";
 import Footer from './Footer'
 import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
+import Nav2 from "./Nav2"; // Import Nav2 component
+
 
 function ArtsAndSports() {
     return (
         <div className="arts-and-sports-container">
-            <Navbar />
+            <Nav2 />
             <header className="header">
                 <img src={Sports} alt="Arts and Sports" className="header-image" />
             </header>

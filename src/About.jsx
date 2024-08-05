@@ -8,6 +8,7 @@ import ball from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets
 import headphones from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/music.png";
 import solutions from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/solutions.png";
 import Footer from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Footer.jsx";
+import Nav2 from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav2.jsx"; // Import Nav2 component
 
 function DetailPage() {
   const [activeSection, setActiveSection] = useState("what-we-do");
@@ -40,7 +41,7 @@ function DetailPage() {
 
   return (
     <div className="relative">
-      <Navbar className="navbar" />
+      <Nav2 className="navbar" />
       <div className="about-1">
         <img src={students} className="about-1-img" alt="Students" />
         <div className="overlay"></div>
