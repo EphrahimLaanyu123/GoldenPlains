@@ -60,8 +60,8 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] overflow-hidden">
-      <Nav2 /> {/* Use Nav2 component */}
+    <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] font-cormorant overflow-hidden">
+      <Nav2 />
 
       {slides.map((slide, index) => (
         <div
@@ -76,7 +76,7 @@ const HeroSlider = () => {
           }}
         >
           <div className="flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
-            <h3 className="text-xl md:text-3xl lg:text-5xl mb-2">
+            <h3 className="text-xl md:text-3xl lg:text-5xl mb-2 ">
               {slide.subtitle}
             </h3>
             <h1 className="text-3xl md:text-6xl lg:text-9xl font-bold mb-4">

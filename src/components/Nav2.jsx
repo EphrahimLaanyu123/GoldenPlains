@@ -84,8 +84,9 @@ const Nav2 = () => {
                       )}
                     </p>
                     <ul className={`nav__curriculum-dropdown ${isCurriculumDropdownOpen ? 'open' : ''}`}>
-                      <li><Link to="/about/curriculum/overview" onClick={toggleDropdown}>Overview</Link></li>
-                      <li><Link to="/about/curriculum/details" onClick={toggleDropdown}>Details</Link></li>
+                      <li><Link to="/arts-and-sports" onClick={toggleDropdown}>Arts and Sports</Link></li>
+                      <li><Link to="/social-sciences" onClick={toggleDropdown}>Social sciences</Link></li>
+                      <li><Link to="/stem" onClick={toggleDropdown}>STEM</Link></li>
                     </ul>
                   </div>
                 </li>
@@ -100,7 +101,7 @@ const Nav2 = () => {
                       )}
                     </p>
                     <ul className={`nav__co-curriculum-dropdown ${isCoCurriculumDropdownOpen ? 'open' : ''}`}>
-                      <li><Link to="/about/co-curriculum/activities" onClick={toggleDropdown}>Activities</Link></li>
+                      <li><Link to="/about/co-curriculum/activities" onClick={toggleDropdown}>Arts and Sport</Link></li>
                       <li><Link to="/about/co-curriculum/events" onClick={toggleDropdown}>Events</Link></li>
                     </ul>
                   </div>
