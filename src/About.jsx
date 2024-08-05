@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for internal navigation
 import "./About.css";
 import Navbar from "./components/Nav";
-import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_6014.jpg";
-import book from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/open-book.png";
-import ball from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/soccer-ball-variant.png";
-import headphones from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/music.png";
-import solutions from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/solutions.png";
-import Footer from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Footer.jsx";
-import Nav2 from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav2.jsx"; // Import Nav2 component
+import students from "./assets/DSC_6014.jpg";
+import book from "./assets/open-book.png";
+import ball from "./assets/soccer-ball-variant.png";
+import headphones from "./assets/music.png";
+import solutions from "./assets/solutions.png";
+import Footer from "./components/Footer.jsx";
+import Nav2 from "./components/Nav2.jsx"; // Import Nav2 component
 
 function DetailPage() {
   const [activeSection, setActiveSection] = useState("what-we-do");

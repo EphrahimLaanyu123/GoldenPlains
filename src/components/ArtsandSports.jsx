@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
-import Sports from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5967.jpg";
-import kids from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5832.jpg";
+import './ArtsandSports.css';
+import Sports from "../assets/DSC_5967.jpg";
+import kids from "../assets/DSC_5832.jpg";
+
 import Footer from './Footer'
 import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
 import Nav2 from "./Nav2"; // Import Nav2 component

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Hero from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/HeroImage.png";
+import Hero from "../assets/HeroImage.png";
 import { Link } from "react-router-dom";
 import './Join.css';
 

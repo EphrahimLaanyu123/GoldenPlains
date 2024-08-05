@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/ArtsandSports.css';
+import './ArtsandSports.css';
 import SocialSciencesImage from "../assets/DSC_5967.jpg";
-import students from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/DSC_5947.jpg";
+import students from "../assets/DSC_5947.jpg";
 import Footer from './Footer';
-import Navbar from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/components/Nav.jsx";
 import Nav2 from "./Nav2"; // Import Nav2 component
 
 
