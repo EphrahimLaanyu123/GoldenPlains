@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './components/Nav';
+import Nav2 from './components/Nav2';
 import bgImage from "./assets/Hero5.png"; 
 
 function Contact() {
@@ -46,7 +46,7 @@ function Contact() {
   const title = "Contact Us";
   return (
     <div>
-      <Navbar />
+      <Nav2 />
       <div
         className="h-[40vh] relative flex justify-center items-center font-bold text-4xl md:text-8xl text-white pt-8 md:pt-52"
         style={{
