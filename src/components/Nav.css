@@ -22,6 +22,8 @@
 .logo-and-title {
   display: flex;
   align-items: center;
+  font-family: "Rhodium Libre", serif;
+
 }
 
 .logo {
@@ -33,7 +35,7 @@
   font-size: 1.25rem;
   line-height: 1.2;
   color: whitesmoke;
-  font-family: Cormorant Garamond;
+  font-family: "Rhodium Libre", serif;
 }
 
 .menu-items {

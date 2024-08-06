@@ -59,7 +59,7 @@ function Curriculum() {
                         {infoSection.map((section, index) => (
                             <Link to={section.link} key={index} className="image-container">
                                 <img src={section.image} alt={section.title} />
-                                <div className="hover-text">{section.title}</div>
+                                <div className="image-title">{section.title}</div>
                             </Link>
                         ))}
                     </div>

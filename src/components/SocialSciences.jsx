@@ -14,7 +14,6 @@ function SocialSciences() {
             <header className="header">
                 <img src={SocialSciencesImage} alt="Social Sciences" className="header-image" />
             </header>
-
             <div className='content-container'>
                 <div className='sides'>
                     <div className='right-side'>

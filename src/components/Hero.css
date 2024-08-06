@@ -1,29 +1,21 @@
+/* Importing Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
 
+/* Join Us Button */
 .join-us {
   background-color: #f59e0b; /* Tailwind yellow-500 */
   color: black; /* Tailwind sky-900 */
-  
-  /* Padding */
   padding: 0.5rem 1rem; /* py-2 px-4 */
-  
-  /* Font styles */
   font-weight: 700; /* Tailwind font-bold */
   font-size: 1.125rem; /* Tailwind text-lg */
   font-family: "Rhodium Libre", serif;
-  
-  /* Border radius and box shadow */
   border-radius: 0.5rem; /* Tailwind rounded-full */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* Tailwind shadow-md */
-  
-  /* Layout */
   position: absolute;
   bottom: 13rem; /* Tailwind bottom-52 */
   left: 8rem; /* Tailwind left-32 */
-  
-  /* Text transformation and transition */
   text-transform: uppercase; /* Tailwind uppercase */
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -38,6 +30,48 @@
   transform: translateY(0.0625rem); /* Tailwind translate-y-0.5 */
 }
 
+/* Slide Transition */
 .slide-transition {
   transition: opacity 1s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .join-us {
+    bottom: 10rem; /* Adjusted for smaller screens */
+    left: 4rem; /* Adjusted for smaller screens */
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .slide-transition .flex {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust title font size for smaller screens */
+  }
+
+  h3, h5 {
+    font-size: 1.25rem; /* Adjust subtitle and description font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .join-us {
+    bottom: 8rem; /* Adjusted for smaller screens */
+    left: 2rem; /* Adjusted for smaller screens */
+    font-size: 0.875rem; /* Smaller font size */
+  }
+
+  .slide-transition .flex {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust title font size for smaller screens */
+  }
+
+  h3, h5 {
+    font-size: 1rem; /* Adjust subtitle and description font size for smaller screens */
+  }
 }

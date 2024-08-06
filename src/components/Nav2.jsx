@@ -48,7 +48,8 @@ const Nav2 = () => {
       <div className={`nav__overlay ${isDropdownOpen ? 'active' : ''}`} onClick={toggleDropdown}></div>
       <div className="nav__container">
         <div className="nav__logo">
-          <img src={Logo} alt="Logo" />
+          <Link to="/"><img src={Logo} alt="Logo" /></Link>
+          
           <div>
             <p>GOLDEN</p>
             <p>PLAINS</p>
@@ -73,6 +74,13 @@ const Nav2 = () => {
                 )}
               </div>
               <ul className={`nav__about-dropdown ${isAboutDropdownOpen ? 'open' : ''}`}>
+              <li>
+                  <div className="nav__about-item">
+                    <Link className='nav__about-link' to="./about" >
+                      Why us
+                      </Link>
+                      </div>
+                </li>
                 <li>
                   <div className="nav__about-item">
                     <p className='nav__about-link' onClick={toggleCurriculumDropdown}>

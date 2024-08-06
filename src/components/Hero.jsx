@@ -123,7 +123,7 @@ const HeroSlider = () => {
 
       <Link
         to="/contact"
-        className="join-us absolute bottom-52 left-32 bg-yellow-500 py-2 px-4 font-bold text-sky-900 text-lg lg:w-56 md:text-2xl lg:text-4xl sm:w-32"
+        className="join-us"
       >
         JOIN US
       </Link>

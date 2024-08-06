@@ -6,7 +6,6 @@ import Space from './components/Space'
 import Curriculum from './components/Curriculum'
 import CoCurriculum from './components/Co-curriculim'
 import Join from './components/Join'
-import CommunitySpace from './components/CommunitySpace'
 import MapComponent from './components/Maps'
 import Footer from './components/Footer'
 
@@ -17,7 +16,6 @@ function Home() {
   return (
     <div className="bg-orange-100 min-h-screen">
       <HeroSlider/>
-      <Space/>
       <InfoSection/>
       <Space/>
       <Curriculum/>
@@ -26,7 +24,6 @@ function Home() {
       <Space/>
       <Join/>
       <Space/>
-      <CommunitySpace/>
       <Space/>
       <MapComponent/>
       <Space/>

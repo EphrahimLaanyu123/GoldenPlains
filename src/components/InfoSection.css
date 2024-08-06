@@ -124,3 +124,35 @@
     color: aliceblue;
     font-size: 1.5rem;
 }
+
+@media (max-width: 768px) {
+    .i-section-content,
+    .i-section-content-2 {
+      flex-direction: column;
+    }
+  
+    .i-section-p,
+    .i-section-p-2 {
+      font-size: 2.5rem;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .section-pp,
+    .section-pp-2 {
+      font-size: 1.2rem;
+      padding: 0 20px;
+    }
+  
+    .section-button,
+    .section-button-2,
+    .section-button-3 {
+      font-size: 1.2rem;
+    }
+  
+    .kids-img,
+    .kids-img-2 {
+      width: 100%;
+      margin-bottom: 20px; /* Added margin for spacing */
+    }
+  }

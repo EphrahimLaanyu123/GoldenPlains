@@ -78,7 +78,7 @@
 .right-side {
     width: 90vh;
     height: 50vh;
-    margin-left: 150px;
+    margin-left: 5rem;
     font-family: Cormorant Garamond;
 
 }
@@ -195,4 +195,69 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section-description,
+    .section-link,
+    .apply-section,
+    .other,
+    .section-2-p {
+        font-size: 1.2rem;
+    }
+
+    .sides {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-2 {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        margin-top: 200px;
+    }
+    .right-side {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .header-image {
+        height: 200px;
+    }
+
+    .section-2 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .header-image-2 {
+        height: 200px;
+        width: 100%;
+    }
+
+    .underline {
+        width: 100%;
+    }
+
+    .ourcurr {
+        font-size: 1.5rem;
+    }
 }

@@ -5,10 +5,9 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  height: 100vh;
+  height: 100%;
   background-color: #FFEDD5;
 }
-
 
 .the-container {
   width: 80%;
@@ -41,6 +40,7 @@
 .images-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
 }
 
 .image-wrapper {
@@ -49,6 +49,7 @@
   height: 30rem;
   overflow: hidden;
   transition: transform 0.3s;
+  margin: 10px; /* Add margin for better spacing on smaller screens */
 }
 
 .image-wrapper img {
@@ -79,4 +80,62 @@
 
 .image-wrapper:hover::after {
   opacity: 1;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .the-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .courriculum-title {
+    font-size: 1.75rem;
+  }
+
+  .courriculum-description {
+    font-size: 1.25rem;
+  }
+
+  .bottom-part {
+    margin-top: 5rem;
+  }
+
+  .image-wrapper {
+    width: 15rem;
+    height: 22rem;
+  }
+
+  .image-wrapper::after {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .the-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .courriculum-title {
+    font-size: 1.5rem;
+  }
+
+  .courriculum-description {
+    font-size: 1rem;
+  }
+
+  .bottom-part {
+    margin-top: 3rem;
+  }
+
+  .image-wrapper {
+    width: 12rem;
+    height: 18rem;
+  }
+
+  .image-wrapper::after {
+    font-size: 1rem;
+  }
 }
