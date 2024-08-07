@@ -49,7 +49,6 @@ const Nav2 = () => {
       <div className="nav__container">
         <div className="nav__logo">
           <Link to="/"><img src={Logo} alt="Logo" /></Link>
-          
           <div>
             <p>GOLDEN</p>
             <p>PLAINS</p>
@@ -74,12 +73,12 @@ const Nav2 = () => {
                 )}
               </div>
               <ul className={`nav__about-dropdown ${isAboutDropdownOpen ? 'open' : ''}`}>
-              <li>
+                <li>
                   <div className="nav__about-item">
-                    <Link className='nav__about-link' to="./about" >
+                    <Link className='nav__about-link' to="/about" >
                       Why us
-                      </Link>
-                      </div>
+                    </Link>
+                  </div>
                 </li>
                 <li>
                   <div className="nav__about-item">
@@ -93,28 +92,28 @@ const Nav2 = () => {
                     </p>
                     <ul className={`nav__curriculum-dropdown ${isCurriculumDropdownOpen ? 'open' : ''}`}>
                       <li><Link to="/arts-and-sports" onClick={toggleDropdown}>Arts and Sports</Link></li>
-                      <li><Link to="/social-sciences" onClick={toggleDropdown}>Social sciences</Link></li>
+                      <li><Link to="/social-sciences" onClick={toggleDropdown}>Social Sciences</Link></li>
                       <li><Link to="/stem" onClick={toggleDropdown}>STEM</Link></li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <div className="nav__about-item">
-                    <p className='nav__about-link' onClick={toggleCoCurriculumDropdown}>
+                    <Link className='nav__about-link' to="/co-curriculum">
                       Our Co-Curriculum
-                      {isCoCurriculumDropdownOpen ? (
-                        <button className="nav__about-toggle nav__about-toggle-right" onClick={closeCoCurriculumDropdown}>-</button>
-                      ) : (
-                        <button className="nav__about-toggle nav__about-toggle-right">+</button>
-                      )}
-                    </p>
-                    <ul className={`nav__co-curriculum-dropdown ${isCoCurriculumDropdownOpen ? 'open' : ''}`}>
-                      <li><Link to="/about/co-curriculum/activities" onClick={toggleDropdown}>Arts and Sport</Link></li>
-                      <li><Link to="/about/co-curriculum/events" onClick={toggleDropdown}>Events</Link></li>
-                    </ul>
+                    </Link>
                   </div>
                 </li>
-                <li><Link to="/about/location" onClick={toggleDropdown}>Location</Link></li>
+                <li>
+                  <a 
+                    href="https://www.google.com/maps/place/Golden+Plains+Academy/@-1.4843699,36.9347071,1111m/data=!3m2!1e3!4b1!4m6!3m5!1s0x182fa1e9adc7f505:0x2ab0b30c70afeeb6!8m2!3d-1.4843699!4d36.937282!16s%2Fg%2F11f77b9g21?hl=en&entry=ttu"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={toggleDropdown}
+                  >
+                    Location
+                  </a>
+                </li>
               </ul>
             </li>
             <li className="nav__dropdown-item">

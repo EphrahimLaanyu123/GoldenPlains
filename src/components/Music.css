@@ -1,0 +1,207 @@
+/* General styles */
+.cocurriculumn {
+    background-color: #FFEDD5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.header2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.content-divvv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.content-div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.the-title {
+    color: black;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 0;
+}
+
+.the-message {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.content-div-2 {
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.co-cards-scroll {
+    max-height: 600px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    border-right: 1px solid #ddd;
+}
+
+.co-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.co-card:hover,
+.co-card.selected {
+    background-color: #fbbf24;
+}
+
+.co-card-info {
+    flex: 2;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.co-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.co-info {
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.co-card-info img {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 2rem;
+    }
+
+    .content-divvv {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .content-div-2 {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .co-cards-scroll {
+        max-height: none;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .co-card-info {
+        flex: 1;
+    }
+
+    .co-card-info img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 1.5rem;
+    }
+
+    .the-title {
+        font-size: 1.5rem;
+    }
+
+    .the-message {
+        font-size: 1.2rem;
+    }
+
+    .co-title {
+        font-size: 1.5rem;
+    }
+
+    .co-info {
+        font-size: 1rem;
+    }
+}

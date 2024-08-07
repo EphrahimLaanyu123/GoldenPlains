@@ -101,60 +101,52 @@ function DetailPage() {
           {activeSection === 'what-we-do' && (
             <div className="content">
               <h1>What We Do</h1>
-              <h2>Our Mission</h2>
+              <h2>Programs</h2>
               <p>
-                Our mission is to create a supportive and inclusive environment where every student can excel. We focus on providing high-quality education that not only meets rigorous academic standards but also fosters personal growth and prepares students for future success.
+                Golden Plains School offers programs approved by the Kenya Ministry of Education and follows the government curriculum as a minimum. The school is fully equipped to offer the Competency-Based Curriculum (CBC) with all the facilities, including a computer lab, a science lab, a home science workshop, and an agriculture demo farm in place.
               </p>
-              <h2>Academic Excellence</h2>
+              <h2>Holistic Learning</h2>
               <p>
-                We offer a challenging curriculum designed to inspire curiosity and critical thinking. Our diverse range of subjects caters to various interests, helping students discover and pursue their passions.
-              </p>
-              <h2>Personal Development</h2>
-              <p>
-                Beyond academics, we emphasize personal development through programs that build essential life skills. Activities and experiences are designed to boost confidence, leadership, and teamwork.
-              </p>
-              <h2>Extracurricular Activities</h2>
-              <p>
-                We provide numerous extracurricular opportunities, including sports, music, and arts. These activities complement academic learning and contribute to a balanced and engaging school experience.
-              </p>
-              <h2>Community Engagement</h2>
-              <p>
-                Our commitment to community involvement encourages students to participate in service projects. This fosters a sense of responsibility and empathy, helping students make a positive impact.
-              </p>
-              <h2>Supportive Environment</h2>
-              <p>
-                We create a safe and welcoming space where every student is valued. Our dedicated staff offers guidance and support to help students thrive academically and personally.
+                With a strong emphasis on holistic learning and cultured discipline, the school aims to mould citizens who will serve the global community with integrity and unbridled faith. The school is a fountain of knowledge and strives to provide an excellent environment for the young to learn, play, and grow in all aspects of life.
               </p>
             </div>
           )}
           {activeSection === 'who-we-are' && (
             <div className="content">
               <h1>Who We Are</h1>
-              <h2>Our Values</h2>
+              <h2>Mission</h2>
               <p>
-                We are driven by core values that define our institution and guide our actions. Integrity, respect, and excellence are at the heart of everything we do. We believe in fostering a culture of collaboration and inclusivity, where every student feels valued and supported.
+                Empowering future generations of Kenya to be responsible, innovative, and compassionate citizens who thrive in their immediate and globalized world.
               </p>
-              <h2>Our Team</h2>
+              <h2>Vision</h2>
               <p>
-                Our dedicated team of educators and staff are passionate about nurturing each student’s potential. With diverse backgrounds and expertise, they bring a wealth of knowledge and experience to our school community.
+                Empowering the Future.
               </p>
-              <h2>Our History</h2>
+              <h2>Values</h2>
               <p>
-                Founded with a vision to provide quality education, our institution has grown and evolved over the years. We have a rich history of achievements and milestones that reflect our commitment to educational excellence.
+                <strong>Respect:</strong> Respect for self, others, diverse cultures, and the environment.<br />
+                <strong>Curiosity:</strong> Curiosity, problem-solving skills, and a questioning mind.<br />
+                <strong>Independence:</strong> Independence, initiative, and taking ownership of learning and actions.<br />
+                <strong>Communication:</strong> Effective communication skills, active listening, and collaboration with others.<br />
+                <strong>Imagination:</strong> Imagination, and the ability to think outside the box.<br />
+                <strong>Patriotism:</strong> Patriotism, being a proud Kenyan who stands for what’s right.
               </p>
-              <h2>Community Involvement</h2>
+              <h2>Location</h2>
               <p>
-                We actively engage with the local community through various outreach programs and partnerships. Our goal is to build strong relationships and contribute positively to the society we are part of.
+                Golden Plains School is a co-educational private primary & junior secondary school located in Airview/Milimani estate of Kitengela Township in Kajiado County. It is about 4km from the township, off the old Namanga Road and along the Golden Plains Avenue.
               </p>
-              <h2>Future Goals</h2>
+              <h2>Teaching Staff</h2>
               <p>
-                Looking ahead, we are focused on continuous improvement and innovation. Our future goals include expanding our programs, enhancing facilities, and further enriching the student experience.
+                The school boasts a very competent professional teaching staff headed by its founding director, Rael Kananga, who has over 40 years of teaching and school management experience. Rael Kananga is an expert on Early Childhood Education and has authored teaching materials in this regard. The complement of 25 teachers has a cumulative experience of over 100 years of teaching.
+              </p>
+              <h2>Christian Values</h2>
+              <p>
+                Golden Plains is founded on very strong Christian values and is an excellent environment for the young to learn, play, and grow in all aspects of life. Guided by its motto, ‘Nurturing the Future,’ Golden Plains School is a home where learning is fun, and every child is nurtured with ultimate care and scholarly passion to achieve their best potential.
               </p>
             </div>
           )}
         </div>
       </div>
-
 
       <div className="additional-texts">
         <h2>Learn more about us</h2>

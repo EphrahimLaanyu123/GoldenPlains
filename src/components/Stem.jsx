@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import StemImage from "../assets/DSC_5967.jpg";
 import students from "../assets/DSC_6055.jpg";
-
+import Nav2 from './Nav2';
+import Footer from './Footer';
 
 
 function Stem() {
     return (
         <div className="stem-container">
-            <Navbar></Navbar>
+            <Nav2></Nav2>
             <header className="header">
                 <img src={StemImage} alt="STEM" className="header-image" />
             </header>
