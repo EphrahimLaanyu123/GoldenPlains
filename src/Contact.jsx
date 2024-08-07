@@ -53,10 +53,11 @@ function Contact() {
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          marginTop: '70px' // Adjust margin top to push content below the navbar
         }}
       >
         <div className="absolute inset-0 bg-blue-900 opacity-50"></div>
-        <div className="relative z-10">{title}</div>
+        <div className="relative z-1">{title}</div>
       </div>
       <div className='pt-10'>
         {error && <p style={{ color: 'red' }}>{error}</p>}
