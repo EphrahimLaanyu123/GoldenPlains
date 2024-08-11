@@ -38,7 +38,7 @@ function Curriculum() {
     ];
 
     return (
-        <div className="curriculum-container">
+        <div className=" myfont curriculum-container">
             <div className="title-description-container">
                 <div className="curriculum-title">
                     Our curriculum

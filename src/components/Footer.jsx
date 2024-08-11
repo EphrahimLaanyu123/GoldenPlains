@@ -9,7 +9,7 @@ import '../index.css';
 
 function Footer() {
   return (
-    <div className="bg-sky-900 font-cormorant">
+    <div className="bg-sky-900 myfont">
       <div className="text-white py-6 pl-4 pr-4 md:pl-20 md:pr-20">
         <hr className="border-t-8 border-white" />
       </div>

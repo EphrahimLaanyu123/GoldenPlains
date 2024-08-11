@@ -5,16 +5,17 @@
     width: 100%;
     background-color: transparent; /* Keep background transparent */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation effect */
-    font-family: 'Cormorant Garamond', serif; /* Apply font family */
+    font-family: "Montserrat" ;
 }
 
 .nav__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: transparent; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Montserrat" ;
+    gap: 70rem;
 }
 
 .nav__logo {
@@ -32,7 +33,7 @@
     color: #fff;
     margin: 0;
     line-height: 1.2; /* Adjust line height as needed */
-    font-size: 1.4rem; /* Adjust font size as needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
 }
 
 .nav__toggle {
@@ -87,6 +88,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column; /* Stack items vertically */
+    font-size: 1.rem;
 }
 
 .nav__dropdown-about {
@@ -100,7 +102,7 @@
 .nav__about-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem; /* Adjust as needed */
+    font-size: 1.1rem; /* Adjust as needed */
     flex-grow: 1;
 }
 
@@ -108,7 +110,7 @@
     background: none;
     border: none;
     color: #fff;
-    font-size: 1.5rem; /* Adjusted font size for better readability */
+    font-size: 1.1rem; /* Adjusted font size for better readability */
     cursor: pointer;
     margin-left: 0.5rem;
 }

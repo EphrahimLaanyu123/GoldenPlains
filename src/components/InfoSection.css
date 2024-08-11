@@ -2,6 +2,8 @@
     width: 100%;
     height: 100%;
     background-color: antiquewhite;
+    font-family: "Montserrat" ;
+
 }
 
 .isections {
@@ -12,7 +14,7 @@
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     width: 80%;
     height: 100%;
-    font-family: Cormorant Garamond;
+    font-family: "Montserrat" ;
     justify-content: center;
 }
 
@@ -54,7 +56,7 @@
 }
 
 .section-pp {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .section-button {
@@ -91,7 +93,7 @@
 }
 
 .section-pp-2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .section-button-2 {

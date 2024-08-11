@@ -60,7 +60,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] font-cormorant overflow-hidden">
+    <div className=" mainnn relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] myfont overflow-hidden">
       <Nav2 />
 
       {slides.map((slide, index) => (
@@ -75,7 +75,7 @@ const HeroSlider = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
+          <div className=" myfont flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
             <h3 className="text-xl md:text-3xl lg:text-5xl mb-2 ">
               {slide.subtitle}
             </h3>
