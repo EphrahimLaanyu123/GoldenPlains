@@ -9,17 +9,17 @@ import Footer from "./Footer"
 function Music() {
     const cos = [
         {
-            title: "Music Club",
+            title: "MUSIC CLUB",
             info: "The Music Club at our school is a haven for budding musicians and music enthusiasts alike. Here, students can explore their musical talents, learn to play various instruments, and understand the theory behind the music. The club provides an excellent platform for students to collaborate, compose, and perform music in a supportive environment. Members have the opportunity to participate in school concerts, inter-school competitions, and community events. With state-of-the-art musical instruments and guidance from experienced instructors, the Music Club nurtures creativity, teamwork, and a deep appreciation for the art of music.",
             image: violin
         },
         {
-            title: "Computer Lab",
+            title: "COMPUTER LAB",
             info: "Our Computer Lab is a state-of-the-art facility that provides students with access to the latest technology and software. It is a hub for learning, innovation, and discovery. Students can engage in a variety of activities, from coding and robotics to digital art and media production. The lab is equipped with high-speed internet and modern computers, ensuring that students have the resources they need to succeed. Through various projects and competitions, students can develop their technical skills and problem-solving abilities, preparing them for the technological challenges of the future.",
             image: computer
         },
         {
-            title: "Home Club",
+            title: "HOME CLUB",
             info: "The Home Club is dedicated to teaching students essential life skills that go beyond the classroom. This club focuses on activities such as cooking, sewing, home management, and financial literacy. Students learn to prepare nutritious meals, manage household chores, and understand the basics of budgeting and saving. The Home Club emphasizes the importance of self-sufficiency, responsibility, and practical knowledge. Through hands-on activities and workshops, students gain valuable skills that will serve them well in their personal lives and future careers.",
             image: home
         }
@@ -33,7 +33,7 @@ function Music() {
             <header className="header2">
     <img src={violin} alt="Arts and Sports" className="header-image-2" />
     <div className="header-text">
-        Our Co-curriculum
+        OUR CO-CURRICULUM
     </div>
 </header>
 
@@ -42,7 +42,7 @@ function Music() {
                 <div className="content-div-1">
                     <div className="message">
                         <div className="the-title">
-                             Our Co-curriculum
+                        OUR CO-CURRICULUM
                         </div>
                         <div className="the-message">
                             <p>
@@ -67,15 +67,16 @@ function Music() {
                         ))}
                     </div>
                     <div className="co-card-info">
-                        <h2 className="co-title">{selectedActivity.title}</h2>
-                        <p className="co-info">{selectedActivity.info}</p>
-                        {selectedActivity.image && (
+                    {selectedActivity.image && (
                             <img 
                                 src={selectedActivity.image} 
                                 alt={selectedActivity.title} 
                                 className="co-card-image"
                             />
                         )}
+                        <h2 className="co-title">{selectedActivity.title}</h2>
+                        <p className="co-info">{selectedActivity.info}</p>
+
                     </div>
                 </div>
             </div>

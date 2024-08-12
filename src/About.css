@@ -39,6 +39,7 @@
 .centered-text h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .centered-text p {
@@ -103,6 +104,7 @@
 
 .why-header {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .why-choose-us-text {
@@ -147,6 +149,7 @@
   color: #333;
   position: relative;
   z-index: 1;
+  font-weight: bold;
 }
 
 .tab::after {
@@ -208,16 +211,21 @@
 .content h1 {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .content h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
+
 }
 
 .content p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  text-align: center;
+
 }
 
 .about-4 {

@@ -79,8 +79,12 @@
     font-weight: 2rem;
     padding: 40px;
 }
-
-
+.i-section-p-p {
+    font-weight: bold;
+}
+.i-section-p-2 h1 {
+    font-weight: bold;
+}
 .kids-img-2 {
     width: 50%;
     height: 100%;
@@ -122,8 +126,8 @@
 }
 
 .section-button-3 {
-    background-color: black;
-    color: aliceblue;
+    background-color: #F59E0B;
+    color: black;
     font-size: 1.5rem;
 }
 

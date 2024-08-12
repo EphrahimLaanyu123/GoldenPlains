@@ -7,7 +7,6 @@ import kids from "../assets/DSC_5832.jpg";
 import Footer from './Footer'
 import Nav2 from "./Nav2"; // Import Nav2 component
 
-
 function ArtsAndSports() {
     return (
         <div className="arts-and-sports-container">
@@ -19,18 +18,17 @@ function ArtsAndSports() {
             <div className='content-container'>
                 <div className='sides'>
                     <div className='right-side'>
-                        <h1 className="title">Arts and Sports</h1>
+                        <h1 className="title">ARTS AND SPORTS</h1>
                         <p className="section-description">
                             Welcome to our Arts and Sports program. Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members, ensure that students receive the best education and training. We offer a wide range of extracurricular activities and opportunities for competitions and showcases. Our strong focus on holistic development helps students to grow not only academically but also personally. Our Arts and Sports program is designed to cater to the needs and interests of all students, providing them with the skills and experiences necessary for personal growth and development.
                         </p>
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                        <p className='section-2-p'>"Welcome to our Arts and Sports program. <br />Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br />Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members", <br />John Doe.
-                        </p>
+                            <p className='section-2-p'>"Welcome to our Arts and Sports program. <br />Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br />Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members", <br />John Doe.
+                            </p>
                         </div>
-
-                    <img src={kids} alt="Arts and Sports" className="header-image-2" />
+                        <img src={kids} alt="Arts and Sports" className="header-image-2" />
                     </div>
                     <div className='left-side'>
                         <h1 className='ourcurr'>Other Curriculum</h1>
@@ -45,7 +43,6 @@ function ArtsAndSports() {
                 </div>
             </div>
             <Footer />
-
         </div>
     );
 }

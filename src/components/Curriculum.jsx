@@ -41,7 +41,7 @@ function Curriculum() {
         <div className=" myfont curriculum-container">
             <div className="title-description-container">
                 <div className="curriculum-title">
-                    Our curriculum
+                    OUR CURRICULUM
                 </div>
                 <div className="curriculum-div">
                     <div className="description-underline-wrapper">
@@ -50,8 +50,8 @@ function Curriculum() {
                         </div>
                         <div className="underline-1"></div>
                         <div className="link-container"> 
-                            <Link to="/social-sciences">Social</Link>
-                            <Link to="/arts-and-sports">Arts and Sports</Link>
+                            <Link to="/social-sciences">SOCIAL</Link>
+                            <Link to="/arts-and-sports">ARTS AND SPORTS</Link>
                             <Link to="/stem">STEM</Link>
                         </div>
                     </div>

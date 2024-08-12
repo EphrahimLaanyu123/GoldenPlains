@@ -46,13 +46,13 @@ function DetailPage() {
         <img src={students} className="about-1-img" alt="Students" />
         <div className="overlay"></div>
         <div className="centered-text">
-          <h1>About Us</h1>
+          <h1>ABOUT US</h1>
           <p>Empowering students to achieve their full potential</p>
         </div>
       </div>
       <div className="about-2">
         <div className="why-us-div">
-          <h1 className="why-header">Why Choose Us</h1>
+          <h1 className="why-header">WHY CHOOSE US</h1>
           <p className="why-choose-us-text">
             Our institution is dedicated to fostering a supportive and enriching environment for our students. We provide a well-rounded education that emphasizes academic excellence, personal growth, and extracurricular development. From our extensive library resources to our dynamic sports and music programs, we offer opportunities that cater to diverse interests and needs. Our committed staff ensures that every student receives the guidance and support necessary to thrive and achieve their full potential.
           </p>
@@ -87,13 +87,13 @@ function DetailPage() {
                 className={`tab ${activeSection === 'what-we-do' ? 'active' : ''}`} 
                 onClick={() => setActiveSection('what-we-do')}
               >
-                What We Do
+                WHAT WE DO
               </span>
               <span 
                 className={`tab ${activeSection === 'who-we-are' ? 'active' : ''}`} 
                 onClick={() => setActiveSection('who-we-are')}
               >
-                Who We Are
+                WHO WE ARE
               </span>
               <div className="active-underline"></div>
             </div>

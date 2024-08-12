@@ -27,10 +27,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Montserrat" ;
     text-align: center;
     z-index: 1;
+    font-weight: bold;
 }
 
 .header2::after {
@@ -75,6 +76,7 @@
     font-size: 2.3rem;
     font-family: "Montserrat" ;
     margin-top: 0;
+    font-weight: bold;
 }
 
 .the-message {
@@ -144,7 +146,7 @@
 .co-card-info img {
     width: 100%;
     max-width: 500px;
-    height: 600px;
+    height: 300px;
     border-radius: 0.5rem;
     margin-top: 1rem;
     object-fit: cover;

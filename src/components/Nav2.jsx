@@ -104,7 +104,10 @@ const Nav2 = () => {
                     </Link>
                   </div>
                 </li>
-                <li>
+
+              </ul>
+            </li>
+            <li className="nav__dropdown-item">
                   <a 
                     href="https://www.google.com/maps/place/Golden+Plains+Academy/@-1.4843699,36.9347071,1111m/data=!3m2!1e3!4b1!4m6!3m5!1s0x182fa1e9adc7f505:0x2ab0b30c70afeeb6!8m2!3d-1.4843699!4d36.937282!16s%2Fg%2F11f77b9g21?hl=en&entry=ttu"
                     target="_blank" 
@@ -114,11 +117,6 @@ const Nav2 = () => {
                     Location
                   </a>
                 </li>
-              </ul>
-            </li>
-            <li className="nav__dropdown-item">
-              <Link to="/services" onClick={toggleDropdown}>Services</Link>
-            </li>
             <li className="nav__dropdown-item">
               <Link to="/contact" onClick={toggleDropdown}>Contact</Link>
             </li>

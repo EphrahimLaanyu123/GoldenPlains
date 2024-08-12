@@ -3,58 +3,52 @@
     position: absolute;
     z-index: 10;
     width: 100%;
-    background-color: transparent; /* Keep background transparent */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation effect */
-    font-family: "Montserrat" ;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat";
 }
 
 .nav__container {
     display: flex;
     justify-content: center;
+    gap: 90rem;
     align-items: center;
     padding: 1rem;
-    background-color: transparent; 
-    font-family: "Montserrat" ;
-    gap: 70rem;
+    background-color: transparent;
 }
 
 .nav__logo {
     display: flex;
     align-items: center;
-    gap: 0.2rem; /* Reduced spacing */
+    gap: 0.5rem; /* Adjusted spacing */
 }
 
 .nav__logo img {
-    width: 90px; /* Adjust width for logo */
-    height: 90px; /* Adjust height for logo */
+    width: 50px; /* Smaller logo size for mobile */
+    height: 50px; 
 }
 
 .nav__logo p {
     color: #fff;
     margin: 0;
-    line-height: 1.2; /* Adjust line height as needed */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    line-height: 1.2;
+    font-size: 1.2rem; /* Adjusted font size */
 }
 
 .nav__toggle {
-    color: #fff; /* White text color for contrast */
-    font-size: 1.5rem; /* Font size for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    background-color: #f08944; /* Brighter orange background */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 0.5rem 1rem; /* Padding for better size */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #f08944;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nav__toggle:hover {
-    background-color: #e65c00; /* Darker orange on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-}
-
-.nav__toggle:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Custom focus outline */
+    background-color: #e65c00;
+    transform: scale(1.05);
 }
 
 .nav__dropdown {
@@ -64,13 +58,12 @@
     height: 100vh;
     width: 250px;
     color: aliceblue;
-    font-size: 1.2rem; /* Adjusted font size for better readability */
-    background-color: #222; /* Brighter background color for the dropdown */
+    font-size: 1.2rem;
+    background-color: #222;
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav__dropdown.open {
@@ -79,16 +72,16 @@
 
 .nav__dropdown-menu {
     list-style: none;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
     cursor: pointer;
 }
 
 .nav__dropdown-item {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    font-size: 1.rem;
+    flex-direction: column;
+    font-size: 1rem;
 }
 
 .nav__dropdown-about {
@@ -96,13 +89,13 @@
     align-items: center;
     width: 100%;
     position: relative;
-    cursor: pointer; /* Make the entire section clickable */
+    cursor: pointer;
 }
 
 .nav__about-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.1rem; /* Adjust as needed */
+    font-size: 1rem;
     flex-grow: 1;
 }
 
@@ -110,61 +103,35 @@
     background: none;
     border: none;
     color: #fff;
-    font-size: 1.1rem; /* Adjusted font size for better readability */
+    font-size: 1rem;
     cursor: pointer;
     margin-left: 0.5rem;
 }
 
 /* Dropdown menus */
-.nav__about-dropdown {
+.nav__about-dropdown, .nav__curriculum-dropdown, .nav__co-curriculum-dropdown {
     list-style: none;
     padding: 0;
     margin: 0;
     display: none;
     padding-left: 1rem;
-    background-color: #333; /* Slightly lighter background for the dropdown */
+    background-color: #333;
 }
 
-.nav__about-dropdown.open {
+.nav__about-dropdown.open, .nav__curriculum-dropdown.open, .nav__co-curriculum-dropdown.open {
     display: block;
 }
 
-.nav__about-dropdown li {
+.nav__about-dropdown li, .nav__curriculum-dropdown li, .nav__co-curriculum-dropdown li {
     padding: 0.5rem 0;
 }
 
-.nav__about-dropdown a {
+.nav__about-dropdown a, .nav__curriculum-dropdown a, .nav__co-curriculum-dropdown a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav__about-dropdown a:hover {
-    text-decoration: underline;
-}
-
-.nav__curriculum-dropdown, .nav__co-curriculum-dropdown {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    padding-left: 1rem;
-    background-color: #444; /* Slightly lighter background for these dropdowns */
-}
-
-.nav__curriculum-dropdown.open, .nav__co-curriculum-dropdown.open {
-    display: block;
-}
-
-.nav__curriculum-dropdown li, .nav__co-curriculum-dropdown li {
-    padding: 0.5rem 0;
-}
-
-.nav__curriculum-dropdown a, .nav__co-curriculum-dropdown a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav__curriculum-dropdown a:hover, .nav__co-curriculum-dropdown a:hover {
+.nav__about-dropdown a:hover, .nav__curriculum-dropdown a:hover, .nav__co-curriculum-dropdown a:hover {
     text-decoration: underline;
 }
 
@@ -174,7 +141,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
@@ -183,29 +150,40 @@
 }
 
 /* Adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1768px) {
     .nav__container {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
+        justify-content: space-around;
+        gap: 8rem;
     }
 
     .nav__logo img {
-        width: 40px; /* Adjust width for smaller screens */
-        height: 40px; /* Adjust height for smaller screens */
+        width: 40px;
+        height: 40px;
     }
 
     .nav__logo p {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem;
     }
 
     .nav__dropdown {
-        width: 100%; /* Full width for dropdown on smaller screens */
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .nav__logo p {
         display: none; /* Hide title on very small screens */
+    }
+
+    .nav__dropdown-item {
+        padding: 0.75rem 1rem;
+    }
+
+    .nav__about-link {
+        font-size: 0.9rem;
+    }
+
+    .nav__about-toggle {
+        font-size: 0.9rem;
     }
 }

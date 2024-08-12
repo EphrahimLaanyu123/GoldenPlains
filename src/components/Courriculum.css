@@ -21,18 +21,31 @@
 }
 
 .top-part {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align the items */
+  gap: 20px; /* Adjust this value for desired spacing */
   margin-bottom: 20px;
-  font-family: "Montserrat" ;
+  font-family: "Montserrat";
 }
 
 .courriculum-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .courriculum-description {
   font-size: 1.5rem;
   color: #555;
+  
+}
+
+.courriculum-link {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #FF9C06; /* Link color */
+
 }
 
 .bottom-part {
