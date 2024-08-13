@@ -8,7 +8,7 @@
 .mainnn {
   font-family: "Montserrat" ;
 }
-/* Join Us Button */
+
 .join-us {
   background-color: #f59e0b; /* Tailwind yellow-500 */
   color: black; /* Tailwind sky-900 */
@@ -63,20 +63,20 @@
 
 @media (max-width: 480px) {
   .join-us {
-    bottom: 8rem; /* Adjusted for smaller screens */
-    left: 2rem; /* Adjusted for smaller screens */
-    font-size: 0.875rem; /* Smaller font size */
+    bottom: 8rem; 
+    left: 2rem;
+    font-size: 0.875rem;
   }
 
   .slide-transition .flex {
-    padding: 0.5rem; /* Adjust padding for smaller screens */
+    padding: 0.5rem; 
   }
 
   h1 {
-    font-size: 2rem; /* Adjust title font size for smaller screens */
+    font-size: 2rem;
   }
 
   h3, h5 {
-    font-size: 1rem; /* Adjust subtitle and description font size for smaller screens */
+    font-size: 1rem;
   }
 }

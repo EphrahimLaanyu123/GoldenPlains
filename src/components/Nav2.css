@@ -109,7 +109,9 @@
 }
 
 /* Dropdown menus */
-.nav__about-dropdown, .nav__curriculum-dropdown, .nav__co-curriculum-dropdown {
+.nav__about-dropdown,
+.nav__curriculum-dropdown,
+.nav__co-curriculum-dropdown {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -118,20 +120,28 @@
     background-color: #333;
 }
 
-.nav__about-dropdown.open, .nav__curriculum-dropdown.open, .nav__co-curriculum-dropdown.open {
+.nav__about-dropdown.open,
+.nav__curriculum-dropdown.open,
+.nav__co-curriculum-dropdown.open {
     display: block;
 }
 
-.nav__about-dropdown li, .nav__curriculum-dropdown li, .nav__co-curriculum-dropdown li {
+.nav__about-dropdown li,
+.nav__curriculum-dropdown li,
+.nav__co-curriculum-dropdown li {
     padding: 0.5rem 0;
 }
 
-.nav__about-dropdown a, .nav__curriculum-dropdown a, .nav__co-curriculum-dropdown a {
+.nav__about-dropdown a,
+.nav__curriculum-dropdown a,
+.nav__co-curriculum-dropdown a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav__about-dropdown a:hover, .nav__curriculum-dropdown a:hover, .nav__co-curriculum-dropdown a:hover {
+.nav__about-dropdown a:hover,
+.nav__curriculum-dropdown a:hover,
+.nav__co-curriculum-dropdown a:hover {
     text-decoration: underline;
 }
 
@@ -170,9 +180,21 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .nav__logo p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__logo p {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 480px) {
     .nav__logo p {
-        display: none; /* Hide title on very small screens */
+        font-size: 0.7rem;
     }
 
     .nav__dropdown-item {

@@ -27,7 +27,7 @@ const MapComponent = () => {
               <p className="contact-text">Airview Estate, Kitengela</p>
               <p className="contact-text">P.O Box 589 - 00204 Athi River</p>
               <p className="contact-text">Tel: 0728 907 526 / 0733 851 123</p>
-              <p className="contact-text">Email: info@goldenplainsjps.com</p>
+              <p className="contact-text">Email: info@goldenplainschool.com</p>
             </div>
             <div className="social-icons">
               <FaFacebook />
