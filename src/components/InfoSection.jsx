@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import "./InfoSection.css";
 import kids from "../assets/DSC_5976.jpg";
 import kidss from "../assets/DSC_5980.jpg";
-import applicationFormPDF from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/JUNIOR SCHL ADM TEMPLATE.pdf";
-import juniorPDF from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/JUNIOR SCHL ADM TEMPLATE.pdf";
-import primaryPDF from "/home/user/Desktop/GoldenPlains/goldenPlains-4-main/src/assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import applicationFormPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import primaryPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
 
 import Modal from "./Modal";
 
