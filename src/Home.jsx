@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from './components/Nav'
 import HeroSlider from './components/Hero'
 import InfoSection from './components/InfoSection'
 import Space from './components/Space'

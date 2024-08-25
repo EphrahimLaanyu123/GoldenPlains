@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Nav';
 
 function Gallery() {
   const [images, setImages] = useState([]);

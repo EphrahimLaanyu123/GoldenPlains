@@ -76,19 +76,19 @@ const HeroSlider = () => {
           }}
         >
           <div className=" myfont flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
-            <h3 className="text-xl md:text-3xl lg:text-5xl mb-2 ">
+            <h3 className="text-xl md:text-3xl lg:text-5xl mb-1 ">
               {slide.subtitle}
             </h3>
-            <h1 className="text-3xl md:text-6xl lg:text-9xl font-bold mb-4">
+            <h1 className="text-3xl md:text-6xl lg:text-9xl font-bold mb-2">
               {slide.title}
             </h1>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-4">
+            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description}
             </h5>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-4">
+            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description2}
             </h5>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-6">
+            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description3}
             </h5>
           </div>

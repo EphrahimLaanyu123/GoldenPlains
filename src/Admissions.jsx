@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./components/Nav";
 import bgImage from "./assets/Hero5.png";
 
 function Admissions() {

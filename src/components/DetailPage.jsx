@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Nav";
 import bgImage from "../assets/Hero5.png";
 import './Detail.css'
 

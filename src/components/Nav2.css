@@ -24,8 +24,8 @@
 }
 
 .nav__logo img {
-    width: 50px; /* Smaller logo size for mobile */
-    height: 50px; 
+    width: 80px; /* Smaller logo size for mobile */
+    height: 80px; 
 }
 
 .nav__logo p {

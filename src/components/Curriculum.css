@@ -4,14 +4,13 @@
     width: 100%;
     height: 100%;
     background-color: #FFEDD5;
-    font-family: "Montserrat" ;
-
+    font-family: "Montserrat";
 }
 
 .title-description-container {
     width: 80%;
     text-align: center;
-    font-family: "Montserrat" ;
+    font-family: "Montserrat";
     padding: 50px;
     background-color: aliceblue;
 }
@@ -25,17 +24,31 @@
 .curriculum-div {
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
 .description-underline-wrapper {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-underline-wrapper-content {
+    width: 100%;
+    text-align: center; /* Center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem; /* Add gap between elements */
+
 }
 
 .curriculum-description {
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
-    line-height: 1.5;
-    padding: 20px;
+    padding: 2px;
+    width: 100%;
 }
 
 .underline-1 {
@@ -43,7 +56,7 @@
     height: 2px;
     background-color: #F7B000;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-bottom: 1rem; /* Add some space below the underline */
 }
 
 .images-div {
@@ -61,8 +74,6 @@
     transition: transform 0.3s ease;
     background-color: #FFEDD5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-/* Add margin for better spacing on smaller screens */
 }
 
 .images-div img {
@@ -90,14 +101,12 @@
 
 .link-container {
     display: flex;
+    justify-content: space-around; /* Distribute links evenly */
     flex-direction: column;
-    text-align: left;
-    padding: 1rem;
+    width: 100%;
 }
 
 .link-container a {
-    display: block;
-    margin-bottom: 1rem;
     font-size: 1.3rem;
     color: #ff9b05;
     text-decoration: underline;

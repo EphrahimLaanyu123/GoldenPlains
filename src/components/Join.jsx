@@ -2,11 +2,24 @@ import React, { useRef, useEffect, useState } from "react";
 import Hero from "../assets/HeroImage.png";
 import { Link } from "react-router-dom";
 import './Join.css';
+import applicationFormPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import primaryPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import Modal from "./Modal";
+
 
 function Join() {
   const [isBlurred, setIsBlurred] = useState(false);
   const joinRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -49,12 +62,20 @@ function Join() {
             IF YOU ARE READY TO MAKE A DIFFERENCE IN THE LIVES OF CHILDREN, WE ENCOURAGE YOU TO EXPLORE OUR CAREERS TAB TODAY! WE LOOK FORWARD TO HEARING FROM YOU.
           </div>
           <div className="join-button">
-            <Link to="/admissions" className="join-link">
+            <div className="join-link" onClick={openModal}>
               APPLY HERE
-            </Link>
+            </div>
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2>Select a file to download:</h2>
+        <div className="download-options">
+          <a href={juniorPDF} download="junior_application_form.pdf" className="download-link">Junior Application Form</a>
+          <a href={primaryPDF} download="primary_application_form.pdf" className="download-link">Primary Application Form</a>
+          <a href={applicationFormPDF} download="application_form.pdf" className="download-link">Application Form</a>
+        </div>
+      </Modal>
     </div>
   );
 }
