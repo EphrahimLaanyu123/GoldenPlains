@@ -5,8 +5,8 @@ import Hero1 from "../assets/structure.png";
 import Hero2 from "../assets/heroImage3.png";
 import Hero5 from "../assets/HeroImage5.png";
 import { Link } from "react-router-dom";
-import Nav2 from "./Nav2"; // Import Nav2 component
-import './Hero.css'; // Import CSS file
+import Nav2 from "./Nav2";
+import './Hero.css'; 
 
 const slides = [
   {

@@ -206,3 +206,97 @@
         font-size: 1rem;
     }
 }
+
+/* Additional text styling */
+.header-text,
+.the-title,
+.the-message,
+.co-title,
+.co-info {
+    line-height: 1.5;
+    color: #333;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat" ;
+
+}
+
+.the-title,
+.co-title {
+    text-transform: uppercase;
+    font-family: "Montserrat" ;
+
+}
+
+
+.the-message {
+    color: #555;
+    font-family: "Montserrat" ;
+
+}
+
+.co-info {
+    color: #444;
+    font-family: "Montserrat" ;
+
+}
+
+.co-card p,
+.co-card-info p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-family: "Montserrat" ;
+
+}
+
+/* Links inside the content */
+.content-div-2 a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: "Montserrat" ;
+
+}
+
+.content-div-2 a:hover {
+    color: #004999;
+    text-decoration: underline;
+    font-family: "Montserrat" ;
+
+}
+
+/* Emphasize text inside cards */
+.co-card strong,
+.co-card-info strong {
+    font-weight: bold;
+    color: #222;
+    font-family: "Montserrat" ;
+
+}
+
+/* Blockquote styling */
+.co-card-info blockquote {
+    border-left: 4px solid #fbbf24;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-style: italic;
+    color: #555;
+    font-family: "Montserrat" ;
+
+}
+
+/* Custom title underline */
+.the-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fbbf24;
+    margin: 0.5rem auto 0;
+    font-family: "Montserrat" ;
+
+}
+
+.who-we-are {
+    font-family: "Montserrat";
+
+}

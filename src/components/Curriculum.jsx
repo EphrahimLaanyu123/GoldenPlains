@@ -50,7 +50,7 @@ function Curriculum() {
                             </div>
                             <div className="underline-1"></div>
                             <div className="link-container"> 
-                                <Link to="/social-sciences">SOCIAL</Link>
+                                <Link to="/social-sciences">SOCIAL SCIENCE</Link>
                                 <Link to="/arts-and-sports">ARTS AND SPORTS</Link>
                                 <Link to="/stem">STEM</Link>
                             </div>
@@ -58,13 +58,13 @@ function Curriculum() {
                     </div>
                     <div className="bottom-part">
                         <div className="images-container">
-                            <Link to="/social-sciences" className="image-wrapper" data-name="Home Club">
-                                <img src={Sports} alt="Home Club" />
+                            <Link to="arts-and-sports" className="image-wrapper" data-name="Sports">
+                                <img src={Sports} alt="Sports" />
                             </Link>
-                            <Link to="arts-and-sports" className="image-wrapper" data-name="Music Club">
+                            <Link to="stem" className="image-wrapper" data-name="Stem">
                                 <img src={Stem} alt="Music Club" />
                             </Link>
-                            <Link to="/stem" className="image-wrapper" data-name="Computer Club">
+                            <Link to="/social-sciences" className="image-wrapper" data-name="Social Sciences">
                                 <img src={Social} alt="Computer Club" />
                             </Link>
                         </div>

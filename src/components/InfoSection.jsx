@@ -28,7 +28,26 @@ function InfoSection() {
             <div className="i-section-p">
               <h1 className="i-section-p-p">WHO WE ARE</h1>
               <p className="section-pp">
-                Golden Plains School is a beacon of educational excellence, dedicated to nurturing young minds and fostering a lifelong love of learning. Our school community is built on the principles of integrity, inclusivity, and innovation, where every student is empowered to reach their full potential.
+              Golden Plains Academy (GPA) is a co-educational private primary &amp; junior
+secondary school located in Airview/Milimani estate of Kitengela Township in Kajiado
+County. It is about 4km from the township, off the old Namanga Road and along the
+Golden Plains Avenue. The school offers programs approved by the Kenya Ministry
+of Education and follows the government curriculum as a minimum. The school is
+fully equipped to offer the Competency Based Curriculum (CBC) with all the facilities
+including a computer lab, a science lab, home science workshop, and agriculture
+demo farm, in place.
+The school boasts of a very competent professional teaching staff headed by its
+founding director who has over 40 years teaching and school management
+experience. Rael Kananga is an expert on Early Childhood Education and has
+authored teaching materials in this regard. The compliment of 25 teachers has a
+cumulative experience of over 100 years of teaching.
+GPA is founded on very strong Christian values, and it is an excellent environment
+for the young to learn, play and grow in all aspects of life. With a strong emphasis on
+wholistic learning and cultured discipline, the school is a fountain of knowledge and
+aims to mold citizens who will serve the global community with integrity and
+unbridled faith. Guided by its motto, ‘Nurturing the Future’ Golden Plains Academy is
+a home where learning is fun, and every child is nurtured with ultimate care and
+scholarly passion to achieve best potential.
               </p>
               <Link to='/about' className="section-button">Read More</Link>
             </div>
@@ -46,7 +65,13 @@ function InfoSection() {
             <div className="i-section-p-2">
               <h1>WHAT WE DO</h1>
               <p className="section-pp-2">
-                Golden Plains School is a beacon of educational excellence, dedicated to nurturing young minds and fostering a lifelong love of learning. Our school community is built on the principles of integrity, inclusivity, and innovation, where every student is empowered to reach their full potential.
+              At GPA every child is considered unique. Talent development is individualized, and
+learning is delivered via a combination of theoretical and practical methods. Every
+child is encouraged to be a member of at least one club and every pupil has
+opportunity to engage in a sporting activity.
+Monitoring and evaluation are integrated in daily school programs with a department
+of examinations and quality control in place. Where remedial assistance is needed,
+the school facilitates this with due regard to the wellbeing of the pupils.
               </p>
               <Link to='/about' className="section-button-2">Read More</Link>
             </div>
@@ -59,7 +84,11 @@ function InfoSection() {
               <div className="i-section-p-2">
                 <h1>JOIN US</h1>
                 <p className="section-pp-2">
-                  Become a part of the Golden Plains School family and embark on a journey of lifelong learning and personal growth. We welcome students from diverse backgrounds and offer a supportive environment where every individual is valued. Join us to experience a vibrant, inclusive community that nurtures your talents and encourages you to achieve your best.
+                Welcome to Golden Plains Academy. You can seek admission for your child by
+following the instructions on the admissions tab in this website. You can also contact
+the school through any of the contacts given and any of the social media accounts. A
+physical visit to the school campus during office hours is always welcome. Come and
+experience the serene and conducive learning environment that is GPA.
                 </p>
                 <button className="section-button-3" onClick={openModal}>
                   Download options

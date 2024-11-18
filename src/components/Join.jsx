@@ -20,6 +20,7 @@ function Join() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -57,9 +58,23 @@ function Join() {
       >
         <div className="join-overlay"></div>
         <div className="join-content">
-          <div className="join-title">Join Our Team</div>
+          <div className="join-title">HEADTEACHER'S NOTE</div>
           <div className="join-subtitle">
-            IF YOU ARE READY TO MAKE A DIFFERENCE IN THE LIVES OF CHILDREN, WE ENCOURAGE YOU TO EXPLORE OUR CAREERS TAB TODAY! WE LOOK FORWARD TO HEARING FROM YOU.
+            At GOLDEN PLAINS PRIMARY AND JUNIOR SCHOOL, we have a very dedicated,
+            hardworking and competent staff that will go an extra mile as only the best
+            will do for the children in our care.
+            We work in a very close partnership with parents to achieve success for all,
+            based on high expectations and equality of access to all.
+            We nurture the growth of the whole child; academically, socially, morally,
+            emotionally, spiritually and physically in a safe and caring environment.
+            We believe that a happy child will be a successful child and work to ensure
+            every child enjoys school and achieves success. We do this by providing the
+            best teaching and experiences that we can through an exciting and engaging
+            Competency Based Curriculum (CBC).
+            Our levels run from pre-school, primary and junior school.
+          </div>
+          <div className="join-headteacher">
+            Head teacher<br />Mutembei Mbogo Julius.
           </div>
           <div className="join-button">
             <div className="join-link" onClick={openModal}>
@@ -80,4 +95,4 @@ function Join() {
   );
 }
 
-export default Join;
+export default Join

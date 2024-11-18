@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ArtsandSports.css';
-import SocialSciencesImage from "../assets/DSC_5967.jpg";
-import students from "../assets/DSC_5947.jpg";
+import './ArtsandSports.css';  // Reusing the same CSS file for consistent styling
+import SocialSciencesImage from "../assets/DSC_5967.jpg";  // Replace with the correct image path
+import students from "../assets/DSC_5947.jpg";  // Replace with the correct image path
+
 import Footer from './Footer';
 import Nav2 from "./Nav2"; // Import Nav2 component
 
-
 function SocialSciences() {
     return (
-        <div className="social-sciences-container">
-            <Nav2/>
+        <div className="arts-and-sports-container"> {/* Using the same container class */}
+            <Nav2 />
             <header className="header">
                 <img src={SocialSciencesImage} alt="Social Sciences" className="header-image" />
             </header>
@@ -24,7 +24,11 @@ function SocialSciences() {
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                            <p className='section-2-p'>"Our Social Sciences program is committed to developing informed and engaged citizens. <br></br>We strive to foster a deep understanding of societal issues and encourage students to contribute positively to their communities. <br></br>Through our comprehensive curriculum and experiential learning opportunities", <br></br>Jane Smith.
+                            <p className='section-2-p'>
+                                "Our Social Sciences program is committed to developing informed and engaged citizens. <br />
+                                We strive to foster a deep understanding of societal issues and encourage students to contribute positively to their communities. <br />
+                                Through our comprehensive curriculum and experiential learning opportunities," <br />
+                                Jane Smith.
                             </p>
                         </div>
                         <img src={students} alt="Social Sciences" className="header-image-2" />
@@ -36,12 +40,12 @@ function SocialSciences() {
                         <p className='other'>Check out our other curriculum</p>      
                         <div className="underline"></div>
                         <div className="apply-section">
-                            Apply
+                            <Link to='./admissions'>Apply</Link>
                         </div>  
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }

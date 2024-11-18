@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import StemImage from "../assets/DSC_5967.jpg";
-import students from "../assets/DSC_6055.jpg";
+import StemImage from "../assets/DSC_5967.jpg"; // Replace with the correct image path
+import students from "../assets/DSC_6055.jpg"; // Replace with the correct image path
 import Nav2 from './Nav2';
 import Footer from './Footer';
-
 
 function Stem() {
     return (
         <div className="stem-container">
-            <Nav2></Nav2>
+            <Nav2 />
             <header className="header">
                 <img src={StemImage} alt="STEM" className="header-image" />
             </header>
@@ -24,10 +23,11 @@ function Stem() {
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                            <p className='section-2-p'>"Our STEM program is committed to nurturing the next generation of innovators and problem-solvers. <br></br>We believe in providing students with the skills and knowledge they need to succeed in a rapidly changing world. <br></br>Through our rigorous curriculum and hands-on learning opportunities", <br></br>Jane Smith.
+                            <p className='section-2-p'>
+                                "Our STEM program is committed to nurturing the next generation of innovators and problem-solvers. <br />We believe in providing students with the skills and knowledge they need to succeed in a rapidly changing world. <br />Through our rigorous curriculum and hands-on learning opportunities," <br />Jane Smith.
                             </p>
                         </div>
-                        <img src={students} alt="STEM" className="header-image-2" />
+                        <img src={students} alt="STEM Students" className="header-image-2" />
                     </div>
                     <div className='left-side'>
                         <h1 className='ourcurr'>Our Curriculum</h1>
