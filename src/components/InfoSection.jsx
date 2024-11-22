@@ -28,26 +28,7 @@ function InfoSection() {
             <div className="i-section-p">
               <h1 className="i-section-p-p">WHO WE ARE</h1>
               <p className="section-pp">
-              Golden Plains Academy (GPA) is a co-educational private primary &amp; junior
-secondary school located in Airview/Milimani estate of Kitengela Township in Kajiado
-County. It is about 4km from the township, off the old Namanga Road and along the
-Golden Plains Avenue. The school offers programs approved by the Kenya Ministry
-of Education and follows the government curriculum as a minimum. The school is
-fully equipped to offer the Competency Based Curriculum (CBC) with all the facilities
-including a computer lab, a science lab, home science workshop, and agriculture
-demo farm, in place.
-The school boasts of a very competent professional teaching staff headed by its
-founding director who has over 40 years teaching and school management
-experience. Rael Kananga is an expert on Early Childhood Education and has
-authored teaching materials in this regard. The compliment of 25 teachers has a
-cumulative experience of over 100 years of teaching.
-GPA is founded on very strong Christian values, and it is an excellent environment
-for the young to learn, play and grow in all aspects of life. With a strong emphasis on
-wholistic learning and cultured discipline, the school is a fountain of knowledge and
-aims to mold citizens who will serve the global community with integrity and
-unbridled faith. Guided by its motto, ‘Nurturing the Future’ Golden Plains Academy is
-a home where learning is fun, and every child is nurtured with ultimate care and
-scholarly passion to achieve best potential.
+              Golden Plains Academy (GPA) is a private primary and junior secondary school in Kitengela, Kajiado County, offering Kenya's Competency-Based Curriculum (CBC) with modern facilities. Led by founder Rael Kananga, an expert in Early Childhood Education with 40+ years of experience, the school emphasizes holistic development, Christian values, and global citizenship. Guided by its motto, Nurturing the Future, GPA provides a supportive environment for students to thrive academically and personally.
               </p>
               <Link to='/about' className="section-button">Read More</Link>
             </div>

@@ -23,12 +23,7 @@ function Footer() {
               <div className="font-bold">SCHOOL</div>
             </div>
           </div>
-          <div className="text-white mt-6 text-center md:text-left">
-            <p className="text-3xl md:text-4xl font-bold">
-              <Link to="/about" className="text-white">ABOUT US</Link>
-            </p>
-            <p className="text-lg md:text-xl font-thin">Mission, Vision, core values, Our Team</p>
-          </div>
+
         </div>
         <div className="pt-6 text-white text-center md:text-left">
           <div className="font-bold text-xl">

@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "tailwindcss/tailwind.css";
-import Hero1 from "../assets/structure.png";
-import Hero2 from "../assets/heroImage3.png";
-import Hero5 from "../assets/HeroImage5.png";
+import Hero1 from "../assets/slides/structure.png";
+import Hero2 from "../assets/slides/heroImage3.png";
+import Hero3 from "../assets/slides/HeroImage5.png";
+import Hero4 from "../assets/HeroImage4.png";
+import Hero5 from "../assets/slides/20230510_155205.jpg";
+import Hero6 from "../assets/slides/20240804_141716.jpg";
+
 import { Link } from "react-router-dom";
 import Nav2 from "./Nav2";
 import './Hero.css'; 
@@ -28,7 +32,7 @@ const slides = [
     buttonText: "Explore Our Vision",
   },
   {
-    image: Hero5,
+    image: Hero3,
     title: "Innovatively",
     subtitle: "Shaping Tomorrow's Leaders",
     description: "Providing tools and resources for the leaders of tomorrow.",
@@ -36,6 +40,34 @@ const slides = [
     description3: "",
     buttonText: "Learn More",
   },
+  {
+    image: Hero4,
+    title: "FUTURE",
+    subtitle: "NURTURING THE",
+    description: "Empowering Learners,  ",
+    description2: "Nurturing Tomorrow's Society",
+    description3: "",
+    buttonText: "Learn More",
+  },
+  {
+    image: Hero5,
+    title: "Inspiring",
+    subtitle: "Cultivating Excellence",
+    description: "Fostering a nurturing environment where students excel.",
+    description2: "Experience a blend of tradition and innovation in education.",
+    description3: "",
+    buttonText: "Explore Our Vision",
+  },
+  {
+    image: Hero6,
+    title: "Innovatively",
+    subtitle: "Shaping Tomorrow's Leaders",
+    description: "Providing tools and resources for the leaders of tomorrow.",
+    description2: "Embrace a future full of possibilities with us.",
+    description3: "",
+    buttonText: "Learn More",
+  },
+
 ];
 
 const HeroSlider = () => {
