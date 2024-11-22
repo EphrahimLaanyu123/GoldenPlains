@@ -1,12 +1,12 @@
 .join-container {
   position: relative;
   transition: opacity 0.5s ease;
-  font-family: "Montserrat";
+  font-family: "Montserrat" ;
 }
 
 .join-background {
   width: 100%;
-  height: 80vh; /* Adjusted to 80vh */
+  height: 60vh;
   background-size: cover;
   background-attachment: fixed;
   transition: filter 0.5s ease, opacity 0.5s ease;
@@ -50,8 +50,7 @@
   text-align: center;
   color: #fff;
   z-index: 2;
-  padding: 0 2rem; /* Added padding for text spacing */
-  max-width: 80%; /* Ensure content doesn't stretch too wide */
+  padding: 0 1rem; /* Add padding to avoid text from touching edges */
 }
 
 .join-title, .join-subtitle, .join-button {
@@ -60,64 +59,62 @@
 }
 
 .join-title {
-  font-size: 2.5rem; /* Slightly smaller font size */
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Slightly stronger shadow */
-  animation-delay: 0.2s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation-delay: 0.2s; /* Delay to make the title appear first */
 }
 
 .join-subtitle {
-  font-size: 1.125rem; /* Reduced font size for subtitle */
+  font-size: 1.25rem; /* Make the text slightly smaller */
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for clarity */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   animation-delay: 0.4s;
-  line-height: 1.6; /* Increased line height for readability */
-  max-width: 75%; /* Ensure subtitle doesn't stretch too wide */
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.5; /* Improved readability */
 }
 
 .join-headteacher {
-  font-size: 1.125rem; /* Adjusted size for the headteacher name */
-  font-weight: 500;
+  font-size: 1rem; /* Smaller text for the headteacher's name */
+  font-weight: bold;
   margin-top: 1rem;
   text-align: center;
   animation-delay: 0.5s;
-  text-transform: uppercase; /* Added uppercase for emphasis */
 }
 
 .join-button {
   margin-top: 2rem;
-  animation-delay: 0.6s;
+  animation-delay: 0.6s; /* Delay to make the button appear last */
 }
 
 .join-link {
-  padding: 0.5rem 2rem;
-  background-color: #FFEDD5;
-  color: #000;
+  padding: 0.5rem 1.5rem; /* Adjusted padding for a more balanced look */
+  background-color: #FFEDD5; /* Light orange background */
+  color: #000000; /* Black text for contrast */
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
-  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: inline-block; /* Ensures the link doesn't stretch */
 }
 
 .join-link:hover {
-  background-color: #F7B000;
-  transform: translateY(-3px); /* Lift effect */
-  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2); /* Increased hover shadow */
+  background-color: #F7B000; /* Darker orange on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
 }
 
 .join-button {
   margin-top: 2rem;
-  text-align: center;
+  text-align: center; /* Ensures the button stays centered */
+  animation-delay: 0.6s; /* Delay to make the button appear last */
 }
+
 
 @keyframes fadeInUp {
   from {
@@ -137,11 +134,11 @@
   }
 
   .join-title {
-    font-size: 2.2rem; /* Smaller title on tablets */
+    font-size: 2.5rem;
   }
 
   .join-subtitle {
-    font-size: 1rem; /* Adjusted subtitle font size */
+    font-size: 1.25rem;
   }
 
   .join-button {
@@ -152,23 +149,24 @@
     padding: 0.5rem 1.5rem;
   }
 
+  /* Add more spacing if needed */
   .join-content {
-    padding: 0 2rem; /* Adjust padding for smaller screens */
+    padding: 0 2rem; /* Increase padding to prevent text overflow */
   }
 }
 
 /* Media query for mobile phones */
 @media (max-width: 480px) {
   .join-background {
-    height: 60vh; /* Reduced height for smaller screens */
+    height: 70vh;
   }
 
   .join-title {
-    font-size: 1.8rem; /* Even smaller title for phones */
+    font-size: 2rem;
   }
 
   .join-subtitle {
-    font-size: 0.9rem; /* Smaller subtitle */
+    font-size: 1rem;
   }
 
   .join-button {
@@ -179,11 +177,24 @@
     padding: 0.5rem 1rem;
   }
 
+  /* Additional adjustments for very small screens */
   .join-content {
-    padding: 0 1rem;
+    padding: 0 1rem; /* Adjust padding for very small screens */
   }
+  .join-subtitle {
+    font-size: 1rem;
+  }
+  .join-headteacher {
+    font-size: 0.9rem;
+  }
+}
 
+@media (max-width: 480px) {
+  .join-subtitle {
+    font-size: 0.85rem;
+  }
   .join-headteacher {
     font-size: 0.8rem;
   }
+
 }
