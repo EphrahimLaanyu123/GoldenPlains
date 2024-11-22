@@ -7,7 +7,6 @@ import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
 import primaryPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
 import Modal from "./Modal";
 
-
 function Join() {
   const [isBlurred, setIsBlurred] = useState(false);
   const joinRef = useRef(null);
@@ -95,4 +94,4 @@ function Join() {
   );
 }
 
-export default Join
+export default Join;
