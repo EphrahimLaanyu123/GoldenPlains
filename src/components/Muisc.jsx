@@ -104,8 +104,9 @@ function Music() {
                                     </ul>
                                 </div>
                                 <div className="co-closing">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo1K_BXsU9QRkSF9Jo5yR_L4IVORRxfL8NywfC-3yEHRa5_A/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                                    <p>Home science expertise is required in frozen food manufacturing, cooking, food preservatives, and food production. Learners can work as food analysts, quality controllers, quality managers in the food processing and preservation department.</p>
+                                <div class="iframe-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo1K_BXsU9QRkSF9Jo5yR_L4IVORRxfL8NywfC-3yEHRa5_A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">Loading…</iframe>
+</div>                                    <p>Home science expertise is required in frozen food manufacturing, cooking, food preservatives, and food production. Learners can work as food analysts, quality controllers, quality managers in the food processing and preservation department.</p>
                                 </div>
                             </>
                         )}
@@ -131,7 +132,10 @@ function Music() {
                                     <h3>Closing:</h3>
                                     <p>Join the Science Club today and experience an incredible journey of investigation, discovery and limitless possibilities.</p>
                                 </div>
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7MtvPmcAVJIVBA3IqZ9WmfKVdWl_H2JWSPRPrDuLQIu_W1g/viewform?embedded=true" width="840" height="625" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                            </>
+                                <div class="iframe-container">
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7MtvPmcAVJIVBA3IqZ9WmfKVdWl_H2JWSPRPrDuLQIu_W1g/viewform?embedded=true" width="840" height="625" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+                                </div>
+                                </>
                         )}
 
                         {selectedActivity === 'dramaClub' && (
@@ -154,7 +158,10 @@ function Music() {
                                     <h3>Closing:</h3>
                                     <p>Come along with us as we ignite our passion for storytelling and experience the exciting world of theater!</p>
                                 </div>
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciE5_ldoPSyj6G9Y6NbUdZzSGjxYXZqAhORhKuBkCZZErD7Q/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                            </>
+                                <div class="iframe-container">
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciE5_ldoPSyj6G9Y6NbUdZzSGjxYXZqAhORhKuBkCZZErD7Q/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                </div>
+                                </>
                         )}
 
                         {selectedActivity === 'artClub' && (
@@ -223,7 +230,10 @@ function Music() {
                                 join us at the Art Club!
                             </p>
                             </div>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciE5_ldoPSyj6G9Y6NbUdZzSGjxYXZqAhORhKuBkCZZErD7Q/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                        </>
+                            <div class="iframe-container">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciE5_ldoPSyj6G9Y6NbUdZzSGjxYXZqAhORhKuBkCZZErD7Q/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+                            </div>                       
+                            </>
                         )}
 
 
@@ -283,7 +293,11 @@ function Music() {
                                 of storytelling and reporting!
                             </p>
                             </div>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNkkFNurL0QNEL3tQ8_bHKAOsxyrMeg7pbu-RFI2AH-vEpKA/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                        </>
+                            <div class="iframe-container">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNkkFNurL0QNEL3tQ8_bHKAOsxyrMeg7pbu-RFI2AH-vEpKA/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+                            </div>
+
+                            </>
                         )}
 
 
@@ -350,7 +364,10 @@ function Music() {
                             <p><strong>BIENVENUS AU GOLDEN PLAINS.</strong></p>
                             <p>Parlons français.</p>
                             </div>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5e6otgzn3oYz72rqCDyg-07o0Zs2JkEJb4mui0i7OiGCvRw/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                            </>
+                            <div class="iframe-container">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5e6otgzn3oYz72rqCDyg-07o0Zs2JkEJb4mui0i7OiGCvRw/viewform?embedded=true" width="840" height="585" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                            
+                            </div>
+                            </>
                         )}
 
                     </div>
