@@ -128,7 +128,7 @@
 }
 
 /* Media query for tablets and smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1768px) {
   .join-background {
     height: 50vh; /* Reduce the height for smaller devices */
   }
@@ -156,7 +156,7 @@
 }
 
 /* Media query for mobile phones */
-@media (max-width: 480px) {
+@media (max-width: 1480px) {
   .join-background {
     height: 60vh; /* Increase the height of the background on smaller devices */
   }
