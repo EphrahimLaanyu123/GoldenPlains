@@ -75,11 +75,7 @@ function Join() {
           <div className="join-headteacher">
             Head teacher<br />Mutembei Mbogo Julius.
           </div>
-          <div className="join-button">
-            <div className="join-link" onClick={openModal}>
-              APPLY HERE
-            </div>
-          </div>
+
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>

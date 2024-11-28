@@ -25,7 +25,7 @@ function ArtsAndSports() {
                     </div>
                     <div className='section-2'>
                         <div className='p-div'>
-                            <p className='section-2-p'>"Welcome to our Arts and Sports program. <br />Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br />Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members", <br />John Doe.
+                            <p className='section-2-p'>"Welcome to our Arts and Sports program. <br />Here, we provide a diverse range of activities that promote creativity, teamwork, and physical fitness. <br />Our state-of-the-art facilities for both arts and sports, along with our experienced and dedicated faculty members." <br />
                             </p>
                         </div>
                         <img src={kids} alt="Arts and Sports" className="header-image-2" />

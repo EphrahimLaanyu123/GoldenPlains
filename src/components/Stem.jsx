@@ -24,7 +24,7 @@ function Stem() {
                     <div className='section-2'>
                         <div className='p-div'>
                             <p className='section-2-p'>
-                                "Our STEM program is committed to nurturing the next generation of innovators and problem-solvers. <br />We believe in providing students with the skills and knowledge they need to succeed in a rapidly changing world. <br />Through our rigorous curriculum and hands-on learning opportunities," <br />Jane Smith.
+                                "Our STEM program is committed to nurturing the next generation of innovators and problem-solvers. <br />We believe in providing students with the skills and knowledge they need to succeed in a rapidly changing world. <br />Through our rigorous curriculum and hands-on learning opportunities."
                             </p>
                         </div>
                         <img src={students} alt="STEM Students" className="header-image-2" />

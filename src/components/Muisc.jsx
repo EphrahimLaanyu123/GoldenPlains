@@ -133,7 +133,7 @@ function Music() {
                                     <p>Join the Science Club today and experience an incredible journey of investigation, discovery and limitless possibilities.</p>
                                 </div>
                                 <div class="iframe-container">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7MtvPmcAVJIVBA3IqZ9WmfKVdWl_H2JWSPRPrDuLQIu_W1g/viewform?embedded=true" width="840" height="625" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7MtvPmcAVJIVBA3IqZ9WmfKVdWl_H2JWSPRPrDuLQIu_W1g/viewform?embedded=true" z>Loading…</iframe> 
                                 </div>
                                 </>
                         )}

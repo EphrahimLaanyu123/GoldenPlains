@@ -7,6 +7,25 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-family: "Montserrat";
 }
+/* Style for the h1 element */
+.nav__about-dropdown h1 {
+    color: #fff;
+    font-size: 0.7rem; /* Slightly larger font size */
+    font-weight: normal;
+    background-color: #444; /* Slight background color to make it stand out */
+    padding: 0.75rem 1rem; /* Padding for better spacing */
+    margin: 0.5rem 0; /* Margin to separate it from other items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+.nav__about-dropdown h1::before {
+    content: "Note: "; /* Adding a note prefix */
+    font-weight: bold;
+    color: #f08944; /* Use the brand color */
+}
+
 
 .nav__container {
     display: flex;

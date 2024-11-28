@@ -108,6 +108,7 @@ const Nav2 = () => {
               </div>
               <ul className={`nav__about-dropdown ${isApplicationsDropdownOpen ? 'open' : ''}`}>
                 <li>
+                  <h1>To be sent to info@goldenplainschool.com</h1>
                   <a href={applicationFormPDF} download onClick={closeAllDropdowns}>
                     Download Application Form
                   </a>

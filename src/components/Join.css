@@ -1,7 +1,7 @@
 .join-container {
   position: relative;
   transition: opacity 0.5s ease;
-  font-family: "Montserrat" ;
+  font-family: "Montserrat";
 }
 
 .join-background {
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.join-background::before {  
+.join-background::before {
   content: '';
   position: absolute;
   top: 0;
@@ -130,15 +130,15 @@
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .join-background {
-    height: 50vh;
+    height: 50vh; /* Reduce the height for smaller devices */
   }
 
   .join-title {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Make the title smaller */
   }
 
   .join-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.2rem; /* Slightly reduce subtitle size */
   }
 
   .join-button {
@@ -158,15 +158,15 @@
 /* Media query for mobile phones */
 @media (max-width: 480px) {
   .join-background {
-    height: 70vh;
+    height: 60vh; /* Increase the height of the background on smaller devices */
   }
 
   .join-title {
-    font-size: 2rem;
+    font-size: 2rem; /* Further reduce title size for mobile */
   }
 
   .join-subtitle {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduce the size of subtitle text */
   }
 
   .join-button {
@@ -174,27 +174,24 @@
   }
 
   .join-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* Adjust padding for smaller devices */
   }
 
   /* Additional adjustments for very small screens */
   .join-content {
     padding: 0 1rem; /* Adjust padding for very small screens */
   }
-  .join-subtitle {
-    font-size: 1rem;
-  }
+
   .join-headteacher {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Slightly smaller text for the headteacher's name */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1480px) {
   .join-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.85rem; /* Reduce subtitle size further on very small screens */
   }
   .join-headteacher {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Reduce headteacher text size */
   }
-
 }

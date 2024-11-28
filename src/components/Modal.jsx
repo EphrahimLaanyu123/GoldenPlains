@@ -16,6 +16,11 @@ function Modal({ isOpen, onClose, children }) {
       <div className="modal-content">
         <button className="modal-close" onClick={onClose}>X</button>
         {children}
+        <p>
+          To be sent to{" "}
+          <a href="mailto:info@goldenplainschool.com" className="modal-email">
+          info@goldenplainschool.com          </a>
+        </p>
       </div>
     </div>
   );

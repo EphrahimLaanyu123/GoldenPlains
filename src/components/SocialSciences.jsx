@@ -27,8 +27,7 @@ function SocialSciences() {
                             <p className='section-2-p'>
                                 "Our Social Sciences program is committed to developing informed and engaged citizens. <br />
                                 We strive to foster a deep understanding of societal issues and encourage students to contribute positively to their communities. <br />
-                                Through our comprehensive curriculum and experiential learning opportunities," <br />
-                                Jane Smith.
+                                Through our comprehensive curriculum and experiential learning opportunities."
                             </p>
                         </div>
                         <img src={students} alt="Social Sciences" className="header-image-2" />
