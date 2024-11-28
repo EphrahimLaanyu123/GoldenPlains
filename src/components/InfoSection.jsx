@@ -28,7 +28,7 @@ function InfoSection() {
             <div className="i-section-p">
               <h1 className="i-section-p-p">WHO WE ARE</h1>
               <p className="section-pp">
-              Golden Plains School (GPS) is a private primary and junior secondary school in Kitengela, Kajiado County, offering Kenya's Competency-Based Curriculum (CBC) with modern facilities. Led by founder Rael Kananga, an expert in Early Childhood Education with 40+ years of experience, the school emphasizes holistic development, Christian values, and global citizenship. Guided by its motto, Nurturing the Future, GPA provides a supportive environment for students to thrive academically and personally.
+              Golden Plains School (GPS) is a private primary and junior secondary school in Kitengela, Kajiado County, offering Kenya's Competency-Based Curriculum (CBC) with modern facilities. Led by founder Rael Kananga, an expert in Early Childhood Education with 40+ years of experience, the school emphasizes holistic development, Christian values, and global citizenship. Guided by its motto, Nurturing the Future, GPS provides a supportive environment for students to thrive academically and personally.
               </p>
               <Link to='/about' className="section-button">Read More</Link>
             </div>
@@ -46,7 +46,7 @@ function InfoSection() {
             <div className="i-section-p-2">
               <h1>WHAT WE DO</h1>
               <p className="section-pp-2">
-              At GPA every child is considered unique. Talent development is individualized, and
+              At GPS every child is considered unique. Talent development is individualized, and
 learning is delivered via a combination of theoretical and practical methods. Every
 child is encouraged to be a member of at least one club and every pupil has
 opportunity to engage in a sporting activity.
@@ -69,7 +69,7 @@ the school facilitates this with due regard to the wellbeing of the pupils.
 following the instructions on the admissions tab in this website. You can also contact
 the school through any of the contacts given and any of the social media accounts. A
 physical visit to the school campus during office hours is always welcome. Come and
-experience the serene and conducive learning environment that is GPA.
+experience the serene and conducive learning environment that is GPS.
                 </p>
                 <button className="section-button-3" onClick={openModal}>
                   Download options
