@@ -28,7 +28,7 @@ function InfoSection() {
             <div className="i-section-p">
               <h1 className="i-section-p-p">WHO WE ARE</h1>
               <p className="section-pp">
-              Golden Plains Academy (GPA) is a private primary and junior secondary school in Kitengela, Kajiado County, offering Kenya's Competency-Based Curriculum (CBC) with modern facilities. Led by founder Rael Kananga, an expert in Early Childhood Education with 40+ years of experience, the school emphasizes holistic development, Christian values, and global citizenship. Guided by its motto, Nurturing the Future, GPA provides a supportive environment for students to thrive academically and personally.
+              Golden Plains School (GPS) is a private primary and junior secondary school in Kitengela, Kajiado County, offering Kenya's Competency-Based Curriculum (CBC) with modern facilities. Led by founder Rael Kananga, an expert in Early Childhood Education with 40+ years of experience, the school emphasizes holistic development, Christian values, and global citizenship. Guided by its motto, Nurturing the Future, GPA provides a supportive environment for students to thrive academically and personally.
               </p>
               <Link to='/about' className="section-button">Read More</Link>
             </div>
@@ -65,7 +65,7 @@ the school facilitates this with due regard to the wellbeing of the pupils.
               <div className="i-section-p-2">
                 <h1>JOIN US</h1>
                 <p className="section-pp-2">
-                Welcome to Golden Plains Academy. You can seek admission for your child by
+                Welcome to Golden Plains School. You can seek admission for your child by
 following the instructions on the admissions tab in this website. You can also contact
 the school through any of the contacts given and any of the social media accounts. A
 physical visit to the school campus during office hours is always welcome. Come and

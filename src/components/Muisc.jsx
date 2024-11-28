@@ -174,11 +174,11 @@ function Music() {
                             <div className="co-description">
                             <p>
                                 Do you find joy in expressing yourself through art? Are you passionate about any
-                                form of artistic expression? Then, <strong>Golden Plains Academy Art Club</strong> is
+                                form of artistic expression? Then, <strong>Golden Plains School Art Club</strong> is
                                 the perfect place for you!
                             </p>
                             <p>
-                                At Golden Plains Academy, we believe in nurturing artistic talents and providing
+                                At Golden Plains School, we believe in nurturing artistic talents and providing
                                 a platform for students to explore various forms of art. The Art Club is a vibrant
                                 community where students can come together to share ideas, learn new techniques,
                                 and collaborate on exciting projects.
@@ -247,7 +247,7 @@ function Music() {
                             <div className="co-description">
                             <p>
                                 Are you curious? Do you have a knack for finding the truth and sharing compelling
-                                stories? If so, then the <strong>Golden Plains Academy Journalism Club</strong> is
+                                stories? If so, then the <strong>Golden Plains School Journalism Club</strong> is
                                 the perfect place for you!
                             </p>
                             <p>
@@ -333,7 +333,7 @@ function Music() {
                                 <p>
                                     Given that the level of French learning in Kenya leaves much to be desired, this club,  
                                     called <strong>"PARLER FRANÇAIS"</strong>, aims to create a space for meeting, discussion, and exchange  
-                                    between <strong>GOLDEN PLAINS ACADEMY</strong> students and all those interested in promoting the French language.
+                                    between <strong>GOLDEN PLAINS SCHOOL</strong> students and all those interested in promoting the French language.
                                 </p>
                                 </div>
                             ) : (
@@ -355,7 +355,7 @@ function Music() {
                                 <p>
                                     Étant donné que le niveau d’apprentissage du français au Kenya reste à désirer, ce club dénommé  
                                     <strong>“PARLER FRANÇAIS”</strong> a pour but de créer un espace de rencontre, de discussion et d’échange entre  
-                                    les élèves du <strong>GOLDEN PLAINS ACADEMY</strong> et de tous ceux qui sont intéressés à la promotion de la langue française.
+                                    les élèves du <strong>GOLDEN PLAINS SCHOOL</strong> et de tous ceux qui sont intéressés à la promotion de la langue française.
                                 </p>
                                 </div>
                             )}
