@@ -59,19 +59,9 @@ function Join() {
         <div className="join-content">
           <div className="join-title">HEADTEACHER'S NOTE</div>
           <div className="join-subtitle">
-            At GOLDEN PLAINS PRIMARY AND JUNIOR SCHOOL, we have a very dedicated,
-            hardworking and competent staff that will go an extra mile as only the best
-            will do for the children in our care.
-            We work in a very close partnership with parents to achieve success for all,
-            based on high expectations and equality of access to all.
-            We nurture the growth of the whole child; academically, socially, morally,
-            emotionally, spiritually and physically in a safe and caring environment.
-            We believe that a happy child will be a successful child and work to ensure
-            every child enjoys school and achieves success. We do this by providing the
-            best teaching and experiences that we can through an exciting and engaging
-            Competency Based Curriculum (CBC).
-            Our levels run from pre-school, primary and junior school.
-          </div>
+  At GOLDEN PLAINS PRIMARY AND JUNIOR SCHOOL, we have a dedicated and hardworking staff committed to the success and well-being of our students. We work closely with parents to ensure every child has equal access to opportunities and achieves success. Our focus is on nurturing the whole child—academically, socially, morally, emotionally, and physically—within a safe and caring environment. We believe that a happy child is a successful one and offer an engaging Competency Based Curriculum (CBC) to support their growth across preschool, primary, and junior school levels.
+</div>
+
           <div className="join-headteacher">
             Head teacher<br />Mutembei Mbogo Julius.
           </div>
