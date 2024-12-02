@@ -34,8 +34,34 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-download-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.modal-download-btn:hover {
+  background-color: #45a049;
+}
+
 .modal-email {
-  color: #0073e6;
   text-decoration: none;
   font-weight: bold;
 }

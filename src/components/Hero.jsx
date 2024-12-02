@@ -7,10 +7,13 @@ import Hero3 from "../assets/slides/HeroImage5.png";
 import Hero4 from "../assets/HeroImage4.png";
 import Hero5 from "../assets/slides/20230510_155205.jpg";
 import Hero6 from "../assets/slides/20240804_141716.jpg";
-
 import { Link } from "react-router-dom";
 import Nav2 from "./Nav2";
 import './Hero.css'; 
+import applicationFormPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";  
+import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import primaryPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
+import Modal from "./Modal"; // Import Modal component
 
 const slides = [
   {
@@ -67,11 +70,11 @@ const slides = [
     description3: "",
     buttonText: "Learn More",
   },
-
 ];
 
 const HeroSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -91,8 +94,16 @@ const HeroSlider = () => {
     );
   };
 
+  const openModal = () => {
+    setIsModalOpen(true); // Open modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Close modal
+  };
+
   return (
-    <div className=" mainnn relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] myfont overflow-hidden">
+    <div className="mainnn relative w-full h-[70vh] md:h-[80vh] lg:h-[100vh] myfont overflow-hidden">
       <Nav2 />
 
       {slides.map((slide, index) => (
@@ -107,20 +118,20 @@ const HeroSlider = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className=" myfont flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
-            <h3 className="text-xl md:text-3xl lg:text-5xl mb-1 ">
+          <div className="myfont flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
+            <h3 className=" slide-subtitle text-xl md:text-3xl lg:text-5xl mb-1">
               {slide.subtitle}
             </h3>
-            <h1 className="text-3xl md:text-6xl lg:text-9xl font-bold mb-2">
+            <h1 className=" slide-subtitle text-3xl md:text-6xl lg:text-9xl font-bold mb-2">
               {slide.title}
             </h1>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
+            <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description}
             </h5>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
+            <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description2}
             </h5>
-            <h5 className="text-lg md:text-2xl lg:text-4xl mb-2">
+            <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description3}
             </h5>
           </div>
@@ -141,7 +152,7 @@ const HeroSlider = () => {
           <FaChevronRight className="text-sm md:text-lg lg:text-xl" />
         </button>
       </div>
-      
+
       <div className="absolute bottom-4 inset-x-0 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <div
@@ -153,12 +164,39 @@ const HeroSlider = () => {
         ))}
       </div>
 
-      <Link
-        to="/contact"
-        className="join-us"
+
+
+      <button
+        onClick={openModal} // Open modal when "Join Us" is clicked
+        className="join-us bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-16 left-1/2 transform -translate-x-1/2"
       >
         JOIN US
-      </Link>
+      </button>
+
+      {/* Modal Component */}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2 className="text-2xl mb-4">Join Us!</h2>
+        <p className="mb-4">
+          To be sent to{" "}
+          <a href="mailto:info@goldenplainschool.com" className="modal-email">
+            info@goldenplainschool.com
+          </a>
+        </p>
+        <a
+          href={juniorPDF}
+          download="Junior_School_Application"
+          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+        >
+          Download Junior School Form
+        </a>
+        <a
+          href={primaryPDF}
+          download="Primary_School_Application"
+          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mt-2"
+        >
+          Download Primary School Form
+        </a>
+      </Modal>
     </div>
   );
 };
