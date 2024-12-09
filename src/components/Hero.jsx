@@ -9,20 +9,18 @@ import Hero5 from "../assets/slides/20230510_155205.jpg";
 import Hero6 from "../assets/slides/20240804_141716.jpg";
 import { Link } from "react-router-dom";
 import Nav2 from "./Nav2";
-import './Hero.css'; 
-import applicationFormPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";  
+import "./Hero.css"; 
+import applicationFormPDF from "../assets/APPLICATION FOR EMPLOYEMENT FORM.pdf";
 import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
-import primaryPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
-import Modal from "./Modal"; // Import Modal component
+import primaryPDF from "../assets/PRIMARY ADMN FORM.pdf";
 
 const slides = [
   {
     image: Hero1,
     title: "FUTURE",
     subtitle: "NURTURING THE",
-    description: "Empowering Learners,  ",
+    description: "Empowering Learners,",
     description2: "Nurturing Tomorrow's Society",
-    description3: "",
     buttonText: "Learn More",
   },
   {
@@ -31,7 +29,6 @@ const slides = [
     subtitle: "Cultivating Excellence",
     description: "Fostering a nurturing environment where students excel.",
     description2: "Experience a blend of tradition and innovation in education.",
-    description3: "",
     buttonText: "Explore Our Vision",
   },
   {
@@ -40,16 +37,14 @@ const slides = [
     subtitle: "Shaping Tomorrow's Leaders",
     description: "Providing tools and resources for the leaders of tomorrow.",
     description2: "Embrace a future full of possibilities with us.",
-    description3: "",
     buttonText: "Learn More",
   },
   {
     image: Hero4,
     title: "FUTURE",
     subtitle: "NURTURING THE",
-    description: "Empowering Learners,  ",
+    description: "Empowering Learners,",
     description2: "Nurturing Tomorrow's Society",
-    description3: "",
     buttonText: "Learn More",
   },
   {
@@ -58,7 +53,6 @@ const slides = [
     subtitle: "Cultivating Excellence",
     description: "Fostering a nurturing environment where students excel.",
     description2: "Experience a blend of tradition and innovation in education.",
-    description3: "",
     buttonText: "Explore Our Vision",
   },
   {
@@ -67,21 +61,20 @@ const slides = [
     subtitle: "Shaping Tomorrow's Leaders",
     description: "Providing tools and resources for the leaders of tomorrow.",
     description2: "Embrace a future full of possibilities with us.",
-    description3: "",
     buttonText: "Learn More",
   },
 ];
 
 const HeroSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 6000); // Change slide every 6 seconds
+    }, 6000);
 
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   const nextSlide = () => {
@@ -92,14 +85,6 @@ const HeroSlider = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
-  };
-
-  const openModal = () => {
-    setIsModalOpen(true); // Open modal
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close modal
   };
 
   return (
@@ -119,10 +104,10 @@ const HeroSlider = () => {
           }}
         >
           <div className="myfont flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-slate-900 via-transparent to-transparent text-white">
-            <h3 className=" slide-subtitle text-xl md:text-3xl lg:text-5xl mb-1">
+            <h3 className="slide-subtitle text-xl md:text-3xl lg:text-5xl mb-1">
               {slide.subtitle}
             </h3>
-            <h1 className=" slide-subtitle text-3xl md:text-6xl lg:text-9xl font-bold mb-2">
+            <h1 className="slide-subtitle text-3xl md:text-6xl lg:text-9xl font-bold mb-2">
               {slide.title}
             </h1>
             <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
@@ -130,9 +115,6 @@ const HeroSlider = () => {
             </h5>
             <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
               {slide.description2}
-            </h5>
-            <h5 className="slide-subtitle text-lg md:text-2xl lg:text-4xl mb-2">
-              {slide.description3}
             </h5>
           </div>
         </div>
@@ -164,39 +146,74 @@ const HeroSlider = () => {
         ))}
       </div>
 
-
-
       <button
-        onClick={openModal} // Open modal when "Join Us" is clicked
+        onClick={() => setIsModalOpen(true)}
         className="join-us bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 absolute bottom-16 left-1/2 transform -translate-x-1/2"
       >
         JOIN US
       </button>
 
-      {/* Modal Component */}
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h2 className="text-2xl mb-4">Join Us!</h2>
-        <p className="mb-4">
-          To be sent to{" "}
-          <a href="mailto:info@goldenplainschool.com" className="modal-email">
-            info@goldenplainschool.com
+      {isModalOpen && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-50 z-[9999] flex justify-center items-center"
+    onClick={() => setIsModalOpen(false)} // Close modal when clicking the overlay
+  >
+    <div
+      className="bg-white p-6 rounded-lg shadow-2xl w-96 border-4 border-amber-500 relative"
+      onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+    >
+      <h2 className="text-2xl font-bold text-amber-600 mb-4 text-center">
+        Download Application Forms
+      </h2>
+      <ul className="space-y-4">
+        <li>
+          <a
+            href={applicationFormPDF}
+            download
+            className="block bg-amber-500 text-white py-2 px-4 rounded-lg text-center hover:bg-amber-600 transition-all"
+          >
+            General Application Form
           </a>
-        </p>
+        </li>
+        <li>
+          <a
+            href={juniorPDF}
+            download
+            className="block bg-amber-500 text-white py-2 px-4 rounded-lg text-center hover:bg-amber-600 transition-all"
+          >
+            Junior School Admission Form
+          </a>
+        </li>
+        <li>
+          <a
+            href={primaryPDF}
+            download
+            className="block bg-amber-500 text-white py-2 px-4 rounded-lg text-center hover:bg-amber-600 transition-all"
+          >
+            Primary School Admission Form
+          </a>
+        </li>
+      </ul>
+      <p className="mt-6 text-gray-700 text-sm text-center">
+        For inquiries or further assistance, please email us at{" "}
         <a
-          href={juniorPDF}
-          download="Junior_School_Application"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+          href="mailto:infoinfo@goldenplainschool.com"
+          className="text-amber-500 font-semibold hover:underline"
         >
-          Download Junior School Form
-        </a>
-        <a
-          href={primaryPDF}
-          download="Primary_School_Application"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mt-2"
-        >
-          Download Primary School Form
-        </a>
-      </Modal>
+          infoinfo@goldenplainschool.com
+        </a>.
+      </p>
+      <button
+        onClick={() => setIsModalOpen(false)}
+        className="mt-6 bg-amber-500 text-white py-2 px-6 rounded-lg text-center w-full font-bold hover:bg-amber-600 transition-all"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
+
     </div>
   );
 };
