@@ -6,7 +6,7 @@ import CoCurriculum from './components/Co-curriculim'
 import Join from './components/Join'
 import MapComponent from './components/Maps'
 import Footer from './components/Footer'
-import Hero2Slider  from '/home/user/GoldenPlainsSchool/src/components/Hero2.jsx'
+import Hero2Slider  from './components/Hero2.jsx'
 
 
 
