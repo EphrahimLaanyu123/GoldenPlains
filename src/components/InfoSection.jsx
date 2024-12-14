@@ -83,7 +83,7 @@ experience the serene and conducive learning environment that is GPS.
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <h2>Select a file to download:</h2>
         <div className="download-options">
-          <a href={juniorPDF} download="junior_application_form.pdf" className="download-link">Junior Application Form</a>
+          <a href className="download-link">Junior Application Form</a>
           <a href={primaryPDF} download="primary_application_form.pdf" className="download-link">Primary Application Form</a>
           <a href={applicationFormPDF} download="application_form.pdf" className="download-link">Application Form</a>
         </div>

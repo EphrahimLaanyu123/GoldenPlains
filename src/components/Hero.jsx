@@ -167,13 +167,15 @@ const HeroSlider = () => {
       </h2>
       <ul className="space-y-4">
         <li>
-          <a
-            href={applicationFormPDF}
-            download
-            className="block bg-amber-500 text-white py-2 px-4 rounded-lg text-center hover:bg-amber-600 transition-all"
-          >
-            General Application Form
-          </a>
+        <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSfZi1Gh_JXl9Wc2-VjLmlcjFMdgnus-ix30-AYDWoe6rUAAqA/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block bg-amber-500 text-white py-2 px-4 rounded-lg text-center hover:bg-amber-600 transition-all"
+>
+  Employment Application Form
+</a>
+
         </li>
         <li>
           <a
