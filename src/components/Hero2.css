@@ -1,0 +1,16 @@
+.join-us {
+    background-color: #F59E0B; /* Initial background color */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px; /* Adjusted for a smaller button */
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth animations */
+    width: 10rem; /* Set the width to a fixed size */
+  }
+  
+  .join-us:hover {
+    background-color: #e6e6e6; /* Change background on hover */
+    transform: scale(1.1); /* Smooth zoom effect */
+  }
+  

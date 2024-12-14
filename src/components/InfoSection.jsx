@@ -71,9 +71,7 @@ the school through any of the contacts given and any of the social media account
 physical visit to the school campus during office hours is always welcome. Come and
 experience the serene and conducive learning environment that is GPS.
                 </p>
-                <button className="section-button-3" onClick={openModal}>
-                  Download options
-                </button>
+
               </div>
             </div>
           </div>

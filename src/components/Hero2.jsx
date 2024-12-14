@@ -12,6 +12,7 @@ import Navbar3 from "./Nav3";
 import applicationFormPDF from "../assets/APPLICATION FOR EMPLOYEMENT FORM.pdf";
 import juniorPDF from "../assets/JUNIOR SCHL ADM TEMPLATE.pdf";
 import primaryPDF from "../assets/PRIMARY ADMN FORM.pdf";
+import "./Hero2.css"; 
 
 const slides = [
   {
@@ -121,10 +122,11 @@ const Hero2Slider = () => {
         {/* Join Us Button */}
         <button
   onClick={() => setIsModalOpen(true)}
-  className="bg-blue-500 text-white py-3 px-6 w-32 rounded-lg hover:bg-blue-600 transition-all mt-4"
+  className="join-us"
 >
   JOIN US
 </button>
+
 
       </div>
     </div>
