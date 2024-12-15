@@ -102,6 +102,8 @@
     padding: 20px 10px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    font-family: "Montserrat";
+
   }
   
   .sidebar__links {
@@ -215,3 +217,5 @@
   cursor: pointer;
   border-radius: 3px;
 }
+
+

@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Nav3.css';
 import Logo from "../assets/logo.png";
+import { Link } from 'react-router-dom';
 
 const Navbar3 = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isApplicationsDropdownOpen, setIsApplicationsDropdownOpen] = useState(false);
+  const [isCurriculumDropdownOpen, setIsCurriculumDropdownOpen] = useState(false);
 
   const sidebarRef = useRef();
 
@@ -38,6 +40,9 @@ const Navbar3 = () => {
     setIsApplicationsDropdownOpen(!isApplicationsDropdownOpen);
   };
 
+  const toggleCurriculumDropdown = () => {
+    setIsCurriculumDropdownOpen(!isCurriculumDropdownOpen);
+  };
 
   return (
     <>
@@ -64,15 +69,30 @@ const Navbar3 = () => {
           <div className="sidebar__links">
             {/* About Us Dropdown */}
             <div>
+            <Link to="/" className="sidebar__link">
+  <span>Home</span>
+</Link>
               <button className="sidebar__link" onClick={toggleAboutDropdown}>
                 <span>About Us</span>
                 <span>{isAboutDropdownOpen ? "-" : "+"}</span>
               </button>
               {isAboutDropdownOpen && (
                 <div className="sidebar__dropdown">
-                  <button className="sidebar__dropdown-link">Why Us</button>
-                  <button className="sidebar__dropdown-link">Our Curriculum</button>
-                  <button className="sidebar__dropdown-link">Our Co-Curriculum</button>
+                  <Link to="/about"className="sidebar__dropdown-link">Why Us</Link>
+                  <div>
+              <button className="sidebar__dropdown-link" onClick={toggleCurriculumDropdown}>
+                <span>Our Curriculum</span>
+                <span>{isCurriculumDropdownOpen ? "-" : "+"}</span>
+              </button>
+              {isCurriculumDropdownOpen && (
+                <div className="sidebar__dropdown">
+                  <Link to="/arts-and-sports" className="sidebar__dropdown-link">Arts and Sports</Link>
+                  <Link to="/social-sciences" className="sidebar__dropdown-link">Social Sciences</Link>
+                  <Link to="/stem" className="sidebar__dropdown-link">STEM</Link>
+                </div>
+              )}
+            </div>
+                  <Link to='/co-curriculum'className="sidebar__dropdown-link">Our Co-Curriculum</Link>
                 </div>
               )}
             </div>
@@ -93,18 +113,15 @@ const Navbar3 = () => {
             </div>
             
             {/* Our Curriculum Dropdown */}
-            <div>
-              <button className="sidebar__link" onClick={toggleCurriculumDropdown}>
-                <span>Our Curriculum</span>
-                <span>{isCurriculumDropdownOpen ? "-" : "+"}</span>
-              </button>
 
-            </div>
             
             {/* Navigation Link for Location */}
-            <button className="sidebar__link" onClick={() => alert("Navigate to Location")}>
+            <a className="sidebar__link"
+              href="https://www.google.com/maps/place/Golden+Plains+Academy/@-1.4843699,36.9347071,1111m/data=!3m2!1e3!4b1!4m6!3m5!1s0x182fa1e9adc7f505:0x2ab0b30c70afeeb6!8m2!3d-1.4843699!4d36.937282!16s%2Fg%2F11f77b9g21?hl=en&entry=ttu"
+              target="_blank" 
+              rel="noopener noreferrer" >
               Location
-            </button>
+            </a>
           </div>
           <button className="sidebar__close" onClick={toggleSidebar}>
             Close Sidebar

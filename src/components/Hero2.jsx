@@ -104,7 +104,7 @@ const Hero2Slider = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-black/70 to-transparent text-white">
+      <div className="hero-text flex flex-col justify-center h-full px-6 lg:px-32 py-8 bg-gradient-to-r from-black/70 to-transparent text-white">
         {/* Text Content */}
         <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-1">
           {slide.subtitle}
