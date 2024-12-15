@@ -1,47 +1,48 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Nav3.css';
 import Logo from "../assets/logo.png";
-import { FaHome, FaInfoCircle, FaEnvelope } from 'react-icons/fa';
 
 const Navbar3 = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isAboutDropdownOpen, setAboutDropdownOpen] = useState(false);
-  const [isCurriculumDropdownOpen, setCurriculumDropdownOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isApplicationsDropdownOpen, setIsApplicationsDropdownOpen] = useState(false);
 
-  // Create a reference to the sidebar for handling clicks
   const sidebarRef = useRef();
 
   const toggleSidebar = () => {
-    setSidebarOpen(prev => !prev);
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const toggleAboutDropdown = () => {
-    setAboutDropdownOpen(prev => !prev);
-  };
-
-  const toggleCurriculumDropdown = () => {
-    setCurriculumDropdownOpen(prev => !prev);
-  };
-
-  // Detect clicks outside sidebar to close it
   const handleClickOutside = (e) => {
-    if (isSidebarOpen && sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-      setSidebarOpen(false);
-      setAboutDropdownOpen(false);
-      setCurriculumDropdownOpen(false);
+    if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+      setIsSidebarOpen(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
-  }, [isSidebarOpen]); // Listen only if sidebar is open
+    if (isSidebarOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isSidebarOpen]);
+
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  };
+
+  const toggleApplicationsDropdown = () => {
+    setIsApplicationsDropdownOpen(!isApplicationsDropdownOpen);
+  };
+
 
   return (
     <>
-      {/* Navbar */}
+      {/* Navigation bar */}
       <nav className="navbar">
-        {/* Logo & Title */}
         <div className="navbar__logo-title">
           <img src={Logo} alt="Logo" className="navbar__logo" />
           <div className="navbar__titles">
@@ -51,7 +52,7 @@ const Navbar3 = () => {
           </div>
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Button to toggle the sidebar */}
         <button className="navbar__toggle" onClick={toggleSidebar}>
           ☰
         </button>
@@ -60,62 +61,53 @@ const Navbar3 = () => {
       {/* Sidebar */}
       {isSidebarOpen && (
         <div className="sidebar" ref={sidebarRef}>
-          <ul className="nav__dropdown-menu">
-            <li>
-              <a href="/" onClick={toggleSidebar}>
-                Home
-              </a>
-            </li>
-            <li>
-              <div className="nav__about-section">
-                <p onClick={toggleAboutDropdown}>About</p>
-                <button
-                  className="nav__dropdown-toggle"
-                  onClick={toggleAboutDropdown}
-                >
-                  {isAboutDropdownOpen ? '-' : '+'}
-                </button>
-              </div>
+          <div className="sidebar__links">
+            {/* About Us Dropdown */}
+            <div>
+              <button className="sidebar__link" onClick={toggleAboutDropdown}>
+                <span>About Us</span>
+                <span>{isAboutDropdownOpen ? "-" : "+"}</span>
+              </button>
               {isAboutDropdownOpen && (
-                <ul className="nav__about-dropdown">
-                  <li><a href="/about">Why us</a></li>
-                  <li>
-                    <div className="nav__curriculum-section">
-                      <p onClick={toggleCurriculumDropdown}>
-                        Our Curriculum
-                      </p>
-                      <button
-                        className="nav__dropdown-toggle"
-                        onClick={toggleCurriculumDropdown}
-                      >
-                        {isCurriculumDropdownOpen ? '-' : '+'}
-                      </button>
-                      {isCurriculumDropdownOpen && (
-                        <ul className="nav__curriculum-dropdown">
-                          <li><a href="/arts-and-sports">Arts and Sports</a></li>
-                          <li><a href="/social-sciences">Social Sciences</a></li>
-                          <li><a href="/stem">STEM</a></li>
-                        </ul>
-                      )}
-                    </div>
-                  </li>
-                  <li><a href="/co-curriculum">Our Co-Curriculum</a></li>
-                </ul>
+                <div className="sidebar__dropdown">
+                  <button className="sidebar__dropdown-link">Why Us</button>
+                  <button className="sidebar__dropdown-link">Our Curriculum</button>
+                  <button className="sidebar__dropdown-link">Our Co-Curriculum</button>
+                </div>
               )}
-            </li>
-            <li>
-              <a
-                href="https://www.google.com/maps/place/Golden+Plains+Academy"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={toggleSidebar}
-              >
-                Location
-              </a>
-            </li>
-          </ul>
+            </div>
+            
+            {/* Applications Dropdown */}
+            <div>
+              <button className="sidebar__link" onClick={toggleApplicationsDropdown}>
+                <span>Applications</span>
+                <span>{isApplicationsDropdownOpen ? "-" : "+"}</span>
+              </button>
+              {isApplicationsDropdownOpen && (
+                <div className="sidebar__dropdown">
+                  <button className="sidebar__dropdown-link">Admissions</button>
+                  <button className="sidebar__dropdown-link">Forms</button>
+                  <button className="sidebar__dropdown-link">Events</button>
+                </div>
+              )}
+            </div>
+            
+            {/* Our Curriculum Dropdown */}
+            <div>
+              <button className="sidebar__link" onClick={toggleCurriculumDropdown}>
+                <span>Our Curriculum</span>
+                <span>{isCurriculumDropdownOpen ? "-" : "+"}</span>
+              </button>
+
+            </div>
+            
+            {/* Navigation Link for Location */}
+            <button className="sidebar__link" onClick={() => alert("Navigate to Location")}>
+              Location
+            </button>
+          </div>
           <button className="sidebar__close" onClick={toggleSidebar}>
-            X
+            Close Sidebar
           </button>
         </div>
       )}
