@@ -4,11 +4,13 @@ import StemImage from "../assets/DSC_5967.jpg"; // Replace with the correct imag
 import students from "../assets/DSC_6055.jpg"; // Replace with the correct image path
 import Nav2 from './Nav2';
 import Footer from './Footer';
+import Navbar3 from "./Nav3";
+
 
 function Stem() {
     return (
         <div className="stem-container">
-            <Nav2 />
+            <Navbar3 />
             <header className="header">
                 <img src={StemImage} alt="STEM" className="header-image" />
             </header>

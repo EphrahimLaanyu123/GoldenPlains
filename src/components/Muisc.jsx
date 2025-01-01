@@ -10,6 +10,8 @@ import journalism from '../assets/co-image/pexels-brotin-biswas-158640-518543.jp
 import french from '../assets/co-image/pexels-atypeek-5781917.jpg';
 import science from '../assets/co-image/pexels-chokniti-khongchum-1197604-2280571.jpg';
 import hscience from "../assets/co-image/pexels-goumbik-616401.jpg"
+import Navbar3 from "./Nav3";
+
 
 
 function Music() {
@@ -18,7 +20,7 @@ function Music() {
 
     return (
         <div className="cocurriculumn">
-            <Nav2 />
+            <Navbar3 />
             <header className="header2">
                 <img src={violin} alt="Arts and Sports" className="header-image-2" />
                 <div className="header-text">

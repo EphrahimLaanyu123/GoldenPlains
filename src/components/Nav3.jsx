@@ -49,8 +49,9 @@ const Navbar3 = () => {
       {/* Navigation bar */}
       <nav className="navbar">
         <div className="navbar__logo-title">
-          <img src={Logo} alt="Logo" className="navbar__logo" />
-          <div className="navbar__titles">
+        <Link to="/" className="navbar__logo">
+  <img src={Logo} alt="Logo" />
+</Link>          <div className="navbar__titles">
             <p className="navbar__title">GOLDEN</p>
             <p className="navbar__title">PLAINS</p>
             <p className="navbar__title">SCHOOL</p>
@@ -105,9 +106,17 @@ const Navbar3 = () => {
               </button>
               {isApplicationsDropdownOpen && (
                 <div className="sidebar__dropdown">
-                  <button className="sidebar__dropdown-link">Admissions</button>
-                  <button className="sidebar__dropdown-link">Forms</button>
-                  <button className="sidebar__dropdown-link">Events</button>
+                  <a className="sidebar__dropdown-link" href='https://docs.google.com/forms/d/e/1FAIpQLSfZi1Gh_JXl9Wc2-VjLmlcjFMdgnus-ix30-AYDWoe6rUAAqA/viewform?usp=header'               target="_blank" 
+              rel="noopener noreferrer" 
+                  >Emplloyment Application
+                  </a>
+                  <a className="sidebar__dropdown-link" href='https://docs.google.com/forms/d/e/1FAIpQLSeDKZOFcVdd63NAcwFBwa_kWFc1-PZKnBNRSgAgJN1KTvKNqw/viewform?usp=header'               target="_blank" 
+              rel="noopener noreferrer" 
+                  >Junior School Application
+                  </a>                  <a className="sidebar__dropdown-link" href='https://docs.google.com/forms/d/e/1FAIpQLScTEm4z0iykaDZy7SKGWDUxhgbMkPr4ws7trS5ePj97RloqwQ/viewform?usp=header'               target="_blank" 
+              rel="noopener noreferrer" 
+                  >Primary School Application
+                  </a>
                 </div>
               )}
             </div>
@@ -124,7 +133,7 @@ const Navbar3 = () => {
             </a>
           </div>
           <button className="sidebar__close" onClick={toggleSidebar}>
-            Close Sidebar
+            Close 
           </button>
         </div>
       )}

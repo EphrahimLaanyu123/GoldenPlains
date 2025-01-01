@@ -6,11 +6,13 @@ import students from "../assets/DSC_5947.jpg";  // Replace with the correct imag
 
 import Footer from './Footer';
 import Nav2 from "./Nav2"; // Import Nav2 component
+import Navbar3 from "./Nav3";
+
 
 function SocialSciences() {
     return (
         <div className="arts-and-sports-container"> {/* Using the same container class */}
-            <Nav2 />
+            <Navbar3 />
             <header className="header">
                 <img src={SocialSciencesImage} alt="Social Sciences" className="header-image" />
             </header>

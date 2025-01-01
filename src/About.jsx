@@ -8,6 +8,8 @@ import headphones from "./assets/music.png";
 import solutions from "./assets/solutions.png";
 import Footer from "./components/Footer.jsx";
 import Nav2 from "./components/Nav2.jsx"; 
+import Navbar3 from "./components/Nav3.jsx";
+
 function DetailPage() {
   const [activeSection, setActiveSection] = useState("what-we-do");
 
@@ -39,7 +41,7 @@ function DetailPage() {
 
   return (
     <div className="relative">
-      <Nav2 className="navbar" />
+      <Navbar3 className="navbar" />
       <div className="about-1">
         <img src={students} className="about-1-img" alt="Students" />
         <div className="overlay"></div>

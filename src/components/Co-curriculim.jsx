@@ -10,6 +10,7 @@ import french from '../assets/co-image/pexels-atypeek-5781917.jpg';
 import science from '../assets/co-image/pexels-chokniti-khongchum-1197604-2280571.jpg';
 import hscience from "../assets/co-image/pexels-goumbik-616401.jpg"
 
+
 function Courriculum() {
   return (
     <div className="courriculum">

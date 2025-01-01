@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './ArtsandSports.css';
 import Sports from "../assets/DSC_5967.jpg";
 import kids from "../assets/DSC_5832.jpg";
+import Navbar3 from "./Nav3";
+
 
 import Footer from './Footer'
 import Nav2 from "./Nav2"; // Import Nav2 component
@@ -10,7 +12,7 @@ import Nav2 from "./Nav2"; // Import Nav2 component
 function ArtsAndSports() {
     return (
         <div className="arts-and-sports-container">
-            <Nav2 />
+            <Navbar3 />
             <header className="header">
                 <img src={Sports} alt="Arts and Sports" className="header-image" />
             </header>

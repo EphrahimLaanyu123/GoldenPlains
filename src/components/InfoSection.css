@@ -118,6 +118,7 @@
     justify-content: center;
     height: 100%;
     text-align: center;
+    color: black;
     
 }
 
@@ -125,10 +126,14 @@
     background-color: aliceblue;
 }
 
+
 .section-button-3 {
     background-color: #F59E0B;
     color: black;
     font-size: 1.5rem;
+}
+.section-button-3 h2 {
+    color: aqua;
 }
 .download-options {
     display: flex;

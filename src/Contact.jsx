@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Nav2 from './components/Nav2';
 import bgImage from "./assets/Hero5.png"; 
+import Navbar3 from './components/Nav3';
+
 
 function Contact() {
   const [name, setName] = useState('');
@@ -46,7 +48,7 @@ function Contact() {
   const title = "Contact Us";
   return (
     <div>
-      <Nav2 />
+      <Navbar3 />
       <div
         className="h-[40vh] relative flex justify-center items-center font-bold text-4xl md:text-8xl text-white pt-8 md:pt-52"
         style={{
