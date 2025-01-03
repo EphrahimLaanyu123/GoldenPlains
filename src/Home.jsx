@@ -28,8 +28,8 @@ function Home() {
           property="og:description"
           content="Discover the opportunities at Golden Plains, offering a comprehensive curriculum, co-curricular activities, and a supportive community."
         />
-        <meta property="og:image" content="https://example.com/assets/hero-image.jpg" />
-        <meta property="og:url" content="https://goldenplainspjs.com" />
+        <meta property="og:image" content="../assets/logo.png" />
+        <meta property="og:url" content="https://goldenplainschool.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Metadata */}
@@ -39,12 +39,12 @@ function Home() {
           name="twitter:description"
           content="Explore Golden Plains, your partner in education, offering diverse pathways and opportunities for holistic growth."
         />
-        <meta name="twitter:image" content="https://example.com/assets/hero-image.jpg" />
+        <meta name="twitter:image" content="../src/assets/logo.png" />
         <meta name="twitter:site" content="@GoldenPlains" />
         <meta name="twitter:creator" content="@GoldenPlains" />
 
         {/* Favicon */}
-        <link rel="icon" type="image/png" href="https://example.com/favicon.png" />
+        <link rel="icon" type="image/png" href="../assets/logo.png" />
       </Helmet>
       <Hero2Slider />
       <InfoSection />
